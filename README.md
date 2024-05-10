@@ -1,2 +1,2 @@
-# Feature-Selection-and-Nearest_Neighbors
+# Feature-Selection-and-Nearest-Neighbors
 CS170 Project 2
