@@ -1,5 +1,4 @@
-from searches import greedy_forward_search
-from searches import greedy_backward_search
+from searches import Problem
 
 def main():
     print("Welcome to the Feature Selection Algorithm.")
@@ -12,10 +11,12 @@ def main():
     algo = int(input("Type the number of the algorithm you want to run: "))
     print("\nBeginning search.")
     
+    problemObj = Problem(list)
+    
     if (algo == 1):
-        greedy_forward_search(list)
+        problemObj.greedy_forward_search()
     elif (algo == 2):
-        greedy_backward_search(list) # need to implement
+        problemObj.greedy_backward_search()
 
 if __name__ == '__main__':
     main()
