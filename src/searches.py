@@ -92,22 +92,31 @@ class Problem:
         print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
   
     def greedy_forward_search(self):
-        sorted_features = {feature:eval(str(feature)) for feature in self.features}    # feature to eval
-        sorted_features = sorted(sorted_features.items(), key=lambda item: item[1])
-        print("sorted:", sorted_features) # debug line
-        
-        result = [{}]
-        curr_val = 0 #current total evaluation for the subset
-        next_feature = sorted_features.pop() #pops off highest accuracy value
-        i = 0
+        result = [set()]
+        best_score = 0.0 #current total evaluation for the subset
+        while len(self.features) > 0:
+            curr_best_score = 0.0
+            curr_best_feature = None
+            for feature in self.features:
+                # eval feature with most recent subset
+                # curr_score = self.eval(result[-1] + feature)
+                curr_score = self.eval()
+                print("Using feature(s) ", result[-1] | {feature}  ," accuracy is ", round(curr_score, 2))
+                if curr_score > curr_best_score:
+                    curr_best_score = curr_score
+                    curr_best_feature = feature
 
-        while curr_val < curr_val + next_feature[1]:
-            cpy = copy.deepcopy(result[i])
-            cpy[next_feature[0]] = next_feature[1]
-            result.append(cpy)
-            curr_val += next_feature[1]
-            if len(sorted_features) > 0: next_feature = sorted_features.pop()
-            else: break
-            i+=1
+            if best_score <= curr_best_score:
+                best_score = curr_best_score  # update the current best score
+                cpy = copy.deepcopy(result[-1]) # copy the current subset 
+                cpy.add(curr_best_feature)  
+                self.features.remove(curr_best_feature) # remove the best feature from the features 
+                result.append(cpy)  # add the new best subset
+                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
+
+            else:
+                print("Warning! accuracy has decreased! So we stop searching..")
+                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
+                return result
         
         return result
