@@ -9,7 +9,7 @@ class Node:
         self.currentFeatures = [] # forward + backward (Passed in features through main)
 
     def printInfo(self):
-      print("Using feature(s) ", self.currentFeatures," accuracy is ", round(self.accuracy, 2))
+      print("   Using feature(s) ", self.currentFeatures," accuracy is ", round(self.accuracy, 2), "%")
 
 
 class Problem:
@@ -85,11 +85,11 @@ class Problem:
         bestFeatures = self.bestNode.currentFeatures
 
         if childMax<parent.accuracy:
-          print("Warning! accuracy has decreased!So we stop searching..")
+          print("\nWarning! Accuracy has decreased! So we stop searching..")
           print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
           break
         #compare accuracies of current subset and output best accuracy
-        print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
+        print("\nFeature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%\n")
   
     def greedy_forward_search(self):
         result = [set()]
