@@ -9,7 +9,7 @@ def main():
     print("\n1 - Forward Selection")
     print("2 - Backward Elimination")
     algo = int(input("Type the number of the algorithm you want to run: "))
-    print("\nBeginning search.")
+    print("\nBeginning search.\n")
     
     problemObj = Problem(my_list)
     
