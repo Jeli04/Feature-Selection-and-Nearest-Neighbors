@@ -4,14 +4,14 @@ def main():
     print("Welcome to the Feature Selection Algorithm.")
     
     numFeatures = int(input("\nPlease enter total number of features: "))
-    list = range(1, numFeatures)
+    my_list = list(range(1, numFeatures+1))
     
     print("\n1 - Forward Selection")
     print("2 - Backward Elimination")
     algo = int(input("Type the number of the algorithm you want to run: "))
     print("\nBeginning search.")
     
-    problemObj = Problem(list)
+    problemObj = Problem(my_list)
     
     if (algo == 1):
         problemObj.greedy_forward_search()
