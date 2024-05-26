@@ -39,25 +39,44 @@ class Validator:
             feature += 1
 
         #storing the distances and class of each data point relative to instance of intererst
-        distances = []
-        classifications = []
+        
+        
 
         #tracking curr entry to make sure we dont include it with nearest neighbors
         curr_entry = 0
 
-        
+        #these are both meant to be 2d arrays with each array represeenting an entry
+        #and each value is the distance/classof one of its neighbors
+        neighbor_distances = []
+        neighbor_classifications = []
+
         for i in range(len(self.data)):
-            cummulative_error = 0
+            distances = []
+            classifications = []
             for j in range(len(self.data)):
+                cummulative_error = 0
                 #making sure we dont count the current instance for nearest neighbors
                 if(j != curr_entry):
                     for feature in relevent_features:
                         cummulative_error += ((self.data[i][feature] - self.data[curr_entry][feature]) ** 2)
 
-            curr_entry += 1
-            distances.append(math.sqrt(cummulative_error))
-            classifications.append[self.data[i][0]]
+                    distances.append(math.sqrt(cummulative_error))
+                    classifications.append(self.data[j][0])
 
+
+            neighbor_distances.append(distances)            
+            neighbor_classifications.append[classifications]
+
+            #iterating the current entry so we know which one to not include in training
+            curr_entry += 1
+
+'''nearest_neighbors = []
+        for neighbor in range(k):
+            curr_min = min(distances)
+            accuracy_index = distances.index(curr_min)
+
+            nearest_neighbors.append(classifications[accuracy_index])'''
+        
 
         return 
 
