@@ -31,22 +31,18 @@ class Validator:
             self.data[:, i] = col_normalized
 
 
-        #getting the features for whatever soecific problem
-            
+        #getting the features for specific input problem parameter
         #adding 1 since first column of data is class
         relevent_features = sampleProblem.bestNode.features
-        for feature in relevent_features:
-            feature += 1
-
-        #storing the distances and class of each data point relative to instance of intererst
-        
+        '''for feature in relevent_features:
+            feature += 1'''        
         
 
         #tracking curr entry to make sure we dont include it with nearest neighbors
         curr_entry = 0
 
         #these are both meant to be 2d arrays with each array represeenting an entry
-        #and each value is the distance/classof one of its neighbors
+        #and each value is the distance/class of one of its neighbors
         neighbor_distances = []
         neighbor_classifications = []
 
@@ -70,12 +66,23 @@ class Validator:
             #iterating the current entry so we know which one to not include in training
             curr_entry += 1
 
-'''nearest_neighbors = []
-        for neighbor in range(k):
-            curr_min = min(distances)
-            accuracy_index = distances.index(curr_min)
 
-            nearest_neighbors.append(classifications[accuracy_index])'''
+        #zipping and sorting lists so the actual knn can find nearest neighbors
+        for i in range (len(neighbor_distances)):
+             zipped_list = list(zip(neighbor_distances[i], neighbor_classifications[i]))
+             sorted_zipped_lists = sorted(zipped_list, key=lambda x: x[0])
+
+             new_distances, new_classifications = zip(*sorted_zipped_lists)
+
+             new_distances = list(new_distances)
+             new_classifications = list(new_classifications)
+
+             neighbor_distances[i] = new_distances
+             neighbor_classifications[i] = new_classifications
+
+        
+        
+
         
 
         return 
