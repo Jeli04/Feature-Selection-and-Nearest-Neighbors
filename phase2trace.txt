@@ -9,210 +9,110 @@ Type the number of the algorithm you want to run: 1
 
 Beginning search.
 
-Using feature(s)  {1}  accuracy is  25.18
-Using feature(s)  {2}  accuracy is  52.71
-Using feature(s)  {3}  accuracy is  54.59
-Using feature(s)  {4}  accuracy is  48.28
-Using feature(s)  {5}  accuracy is  54.99
-Feature set  {5}  was best, accuracy is  54.99 %
-Using feature(s)  {1, 5}  accuracy is  32.72
-Using feature(s)  {2, 5}  accuracy is  67.64
-Using feature(s)  {3, 5}  accuracy is  69.04
-Using feature(s)  {4, 5}  accuracy is  95.87
-Feature set  {4, 5}  was best, accuracy is  95.87 %
-Using feature(s)  {1, 4, 5}  accuracy is  71.44
-Using feature(s)  {2, 4, 5}  accuracy is  83.23
-Using feature(s)  {3, 4, 5}  accuracy is  24.54
+Using feature(s)  {1}  accuracy is  0.73
+Using feature(s)  {2}  accuracy is  55.89
+Using feature(s)  {3}  accuracy is  45.16
+Using feature(s)  {4}  accuracy is  57.33
+Using feature(s)  {5}  accuracy is  53.1
+Feature set  {4}  was best, accuracy is  57.33 %
+Using feature(s)  {1, 4}  accuracy is  84.46
+Using feature(s)  {2, 4}  accuracy is  97.12
+Using feature(s)  {3, 4}  accuracy is  6.15
+Using feature(s)  {4, 5}  accuracy is  91.59
+Feature set  {2, 4}  was best, accuracy is  97.12 %
+Using feature(s)  {1, 2, 4}  accuracy is  11.84
+Using feature(s)  {2, 3, 4}  accuracy is  99.25
+Using feature(s)  {2, 4, 5}  accuracy is  17.76
+Feature set  {2, 3, 4}  was best, accuracy is  99.25 %
+Using feature(s)  {1, 2, 3, 4}  accuracy is  9.55
+Using feature(s)  {2, 3, 4, 5}  accuracy is  41.1
 Warning! accuracy has decreased! So we stop searching..
-Feature set  {4, 5}  was best, accuracy is  95.87 %
-Using features  [4, 5]
+Feature set  {2, 3, 4}  was best, accuracy is  99.25 %
 
-Test Instance  0 is class  2.0
-Its nearest neighbor is training instance 60 which is in class 2.0
-The min distance is  0.10772270068356068
-
-Test Instance  1 is class  1.0
-Its nearest neighbor is training instance 58 which is in class 2.0
-The min distance is  0.3990853749295381
-
-Test Instance  2 is class  2.0
-Its nearest neighbor is training instance 50 which is in class 2.0
-The min distance is  0.21574575015160793
-
-Test Instance  3 is class  2.0
-Its nearest neighbor is training instance 12 which is in class 1.0
-The min distance is  0.22284559436008636
-
-Test Instance  4 is class  1.0
-Its nearest neighbor is training instance 33 which is in class 2.0
-The min distance is  0.03351628649850706
-
-Test Instance  5 is class  1.0
-Its nearest neighbor is training instance 67 which is in class 2.0
-The min distance is  0.09357071094893993
-
-Test Instance  6 is class  2.0
-Its nearest neighbor is training instance 29 which is in class 2.0
-The min distance is  0.16784500786919465
-
-Test Instance  7 is class  1.0
-Its nearest neighbor is training instance 48 which is in class 1.0
-The min distance is  0.27762530211644976
-
-Test Instance  8 is class  1.0
-Its nearest neighbor is training instance 75 which is in class 2.0
-The min distance is  0.23243161327814219
-
-Test Instance  9 is class  2.0
-Its nearest neighbor is training instance 23 which is in class 2.0
-The min distance is  0.17570769151340568
-
-Test Instance  10 is class  2.0
-Its nearest neighbor is training instance 45 which is in class 2.0
-The min distance is  0.19226866084604116
-
-Test Instance  11 is class  2.0
-Its nearest neighbor is training instance 72 which is in class 2.0
-The min distance is  0.14681998017633716
-
-Test Instance  12 is class  2.0
-Its nearest neighbor is training instance 40 which is in class 2.0
-The min distance is  0.41618780926163607
-
-Test Instance  13 is class  2.0
-Its nearest neighbor is training instance 31 which is in class 2.0
-The min distance is  0.3684052701056945
-
-Test Instance  14 is class  1.0
-Its nearest neighbor is training instance 67 which is in class 2.0
-The min distance is  0.11188561607557077
-
-Test Instance  15 is class  2.0
-Its nearest neighbor is training instance 23 which is in class 2.0
-The min distance is  0.2013632423759859
-
-Test Instance  16 is class  2.0
-Its nearest neighbor is training instance 6 which is in class 2.0
-The min distance is  0.9885242605345862
-
-Test Instance  17 is class  1.0
-Its nearest neighbor is training instance 26 which is in class 2.0
-The min distance is  0.14688625937768957
-
-Test Instance  18 is class  2.0
-Its nearest neighbor is training instance 21 which is in class 2.0
-The min distance is  0.6099325633466869
-
-Test Instance  19 is class  2.0
-Its nearest neighbor is training instance 51 which is in class 1.0
-The min distance is  0.045183102178801296
-
-
----------------------------------------------------------RUNNING BACKWARD SELECTION ON SMALL DATASET---------------------------------------------------
-Welcome to the Feature Selection Algorithm.
-
-Please enter total number of features: 5
-
-1 - Forward Selection
-2 - Backward Elimination
-Type the number of the algorithm you want to run: 2
-
-Beginning search.
-
-Using feature(s)  [1, 2, 3, 4, 5]  accuracy is  20.34
-Using feature(s)  [2, 3, 4, 5]  accuracy is  47.51
-Using feature(s)  [1, 3, 4, 5]  accuracy is  58.54
-Using feature(s)  [1, 2, 4, 5]  accuracy is  42.4
-Using feature(s)  [1, 2, 3, 5]  accuracy is  78.85
-Using feature(s)  [1, 2, 3, 4]  accuracy is  17.89
-Feature set  [1, 2, 3, 5]  was best, accuracy is  78.85 %
-Using feature(s)  [2, 3, 5]  accuracy is  64.15
-Using feature(s)  [1, 3, 5]  accuracy is  24.33
-Using feature(s)  [1, 2, 5]  accuracy is  18.99
-Using feature(s)  [1, 2, 3]  accuracy is  32.62
-Warning! accuracy has decreased!So we stop searching..
-Feature set  [1, 2, 3, 5]  was best, accuracy is  78.85 %
-Using features  [1, 2, 3, 5]
+Feature Selection Elapsed Time: 0.0005249977111816406 seconds
+Using features  [2, 3, 4]
 
 Test Instance  0 is class  2.0
 Its nearest neighbor is training instance 68 which is in class 2.0
-The min distance is  1.0989897376037785
+The min distance is  0.8949247676008429
 
 Test Instance  1 is class  1.0
-Its nearest neighbor is training instance 15 which is in class 1.0
-The min distance is  0.8107247582141861
+Its nearest neighbor is training instance 8 which is in class 2.0
+The min distance is  0.8266379033027038
 
 Test Instance  2 is class  2.0
-Its nearest neighbor is training instance 42 which is in class 2.0
-The min distance is  0.7394474353640171
+Its nearest neighbor is training instance 46 which is in class 1.0
+The min distance is  0.32699127229261027
 
 Test Instance  3 is class  2.0
-Its nearest neighbor is training instance 17 which is in class 2.0
-The min distance is  1.535536591516656
+Its nearest neighbor is training instance 39 which is in class 2.0
+The min distance is  1.3572346994300946
 
 Test Instance  4 is class  1.0
-Its nearest neighbor is training instance 53 which is in class 1.0
-The min distance is  0.7900137434417074
+Its nearest neighbor is training instance 65 which is in class 1.0
+The min distance is  0.5729192129914743
 
 Test Instance  5 is class  1.0
 Its nearest neighbor is training instance 33 which is in class 2.0
-The min distance is  0.5789145225088932
+The min distance is  0.2820956158221176
 
 Test Instance  6 is class  2.0
-Its nearest neighbor is training instance 47 which is in class 2.0
-The min distance is  0.9925533825794357
+Its nearest neighbor is training instance 64 which is in class 2.0
+The min distance is  0.405331712418878
 
 Test Instance  7 is class  1.0
-Its nearest neighbor is training instance 61 which is in class 2.0
-The min distance is  0.7609548847041001
+Its nearest neighbor is training instance 50 which is in class 2.0
+The min distance is  0.9104292950850714
 
 Test Instance  8 is class  1.0
-Its nearest neighbor is training instance 57 which is in class 2.0
-The min distance is  1.4588580602362609
+Its nearest neighbor is training instance 55 which is in class 2.0
+The min distance is  0.2199199067806734
 
 Test Instance  9 is class  2.0
 Its nearest neighbor is training instance 3 which is in class 2.0
-The min distance is  0.6420798377975596
+The min distance is  0.3519685378208258
 
 Test Instance  10 is class  2.0
 Its nearest neighbor is training instance 32 which is in class 2.0
-The min distance is  1.5399309377600208
+The min distance is  0.9380717259889976
 
 Test Instance  11 is class  2.0
-Its nearest neighbor is training instance 63 which is in class 2.0
-The min distance is  0.22247543104003664
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  0.4373537026253924
 
 Test Instance  12 is class  2.0
-Its nearest neighbor is training instance 18 which is in class 2.0
-The min distance is  1.5091782791033068
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  1.618215078888149
 
 Test Instance  13 is class  2.0
-Its nearest neighbor is training instance 44 which is in class 2.0
-The min distance is  1.0217182443082733
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  0.43603783998303386
 
 Test Instance  14 is class  1.0
-Its nearest neighbor is training instance 5 which is in class 2.0
-The min distance is  0.39306039956742006
+Its nearest neighbor is training instance 21 which is in class 2.0
+The min distance is  0.32846738336746634
 
 Test Instance  15 is class  2.0
-Its nearest neighbor is training instance 36 which is in class 2.0
-The min distance is  0.6197637037975844
+Its nearest neighbor is training instance 45 which is in class 2.0
+The min distance is  0.25424874963210725
 
 Test Instance  16 is class  2.0
-Its nearest neighbor is training instance 6 which is in class 2.0
-The min distance is  1.4488913561513816
+Its nearest neighbor is training instance 25 which is in class 1.0
+The min distance is  0.3882503661073612
 
 Test Instance  17 is class  1.0
-Its nearest neighbor is training instance 59 which is in class 2.0
-The min distance is  1.1351330317780866
+Its nearest neighbor is training instance 49 which is in class 2.0
+The min distance is  0.33579063513607704
 
 Test Instance  18 is class  2.0
-Its nearest neighbor is training instance 40 which is in class 2.0
-The min distance is  1.0882502567207506
+Its nearest neighbor is training instance 28 which is in class 2.0
+The min distance is  0.5032276608825671
 
 Test Instance  19 is class  2.0
-Its nearest neighbor is training instance 61 which is in class 2.0
-The min distance is  0.5450304321368673
+Its nearest neighbor is training instance 16 which is in class 2.0
+The min distance is  1.085102581331728
+
+Classification Elapsed Time: 0.012993097305297852 seconds
 
 
 ---------------------------------------------------------RUNNING FORWARD SELECTION ON LARGE DATASET---------------------------------------------------
@@ -226,819 +126,933 @@ Type the number of the algorithm you want to run: 1
 
 Beginning search.
 
-Using feature(s)  {1}  accuracy is  23.18
-Using feature(s)  {2}  accuracy is  81.93
-Using feature(s)  {3}  accuracy is  45.45
-Using feature(s)  {4}  accuracy is  27.9
-Using feature(s)  {5}  accuracy is  6.75
-Feature set  {2}  was best, accuracy is  81.93 %
-Using feature(s)  {1, 2}  accuracy is  34.32
-Using feature(s)  {2, 3}  accuracy is  37.21
-Using feature(s)  {2, 4}  accuracy is  61.54
-Using feature(s)  {2, 5}  accuracy is  67.43
+Using feature(s)  {1}  accuracy is  54.52
+Using feature(s)  {2}  accuracy is  22.2
+Using feature(s)  {3}  accuracy is  10.66
+Using feature(s)  {4}  accuracy is  40.99
+Using feature(s)  {5}  accuracy is  44.37
+Feature set  {1}  was best, accuracy is  54.52 %
+Using feature(s)  {1, 2}  accuracy is  29.89
+Using feature(s)  {1, 3}  accuracy is  12.6
+Using feature(s)  {1, 4}  accuracy is  17.79
+Using feature(s)  {1, 5}  accuracy is  30.14
 Warning! accuracy has decreased! So we stop searching..
-Feature set  {2}  was best, accuracy is  81.93 %
-Using features  [2]
+Feature set  {1}  was best, accuracy is  54.52 %
+
+Feature Selection Elapsed Time: 0.00023412704467773438 seconds
+Using features  [1]
 
 Test Instance  0 is class  2.0
-Its nearest neighbor is training instance 377 which is in class 2.0
-The min distance is  0.0021505999999997805
+Its nearest neighbor is training instance 404 which is in class 2.0
+The min distance is  0.0001201000000001784
 
 Test Instance  1 is class  2.0
-Its nearest neighbor is training instance 221 which is in class 2.0
-The min distance is  7.180000000017728e-05
+Its nearest neighbor is training instance 709 which is in class 2.0
+The min distance is  0.001340599999999803
 
 Test Instance  2 is class  2.0
-Its nearest neighbor is training instance 213 which is in class 2.0
-The min distance is  0.003360599999999714
+Its nearest neighbor is training instance 566 which is in class 2.0
+The min distance is  0.0005733999999999462
 
 Test Instance  3 is class  2.0
-Its nearest neighbor is training instance 265 which is in class 1.0
-The min distance is  0.002941699999999825
+Its nearest neighbor is training instance 321 which is in class 2.0
+The min distance is  0.003197100000000397
 
 Test Instance  4 is class  1.0
-Its nearest neighbor is training instance 668 which is in class 2.0
-The min distance is  0.00157179999999979
+Its nearest neighbor is training instance 78 which is in class 1.0
+The min distance is  0.0008333000000000368
 
 Test Instance  5 is class  2.0
-Its nearest neighbor is training instance 241 which is in class 2.0
-The min distance is  0.0011228999999999267
+Its nearest neighbor is training instance 188 which is in class 1.0
+The min distance is  9.56999999996988e-05
 
 Test Instance  6 is class  2.0
-Its nearest neighbor is training instance 249 which is in class 2.0
-The min distance is  0.0006051999999998614
+Its nearest neighbor is training instance 14 which is in class 2.0
+The min distance is  0.0030470999999998583
 
 Test Instance  7 is class  2.0
-Its nearest neighbor is training instance 579 which is in class 2.0
-The min distance is  0.00045659999999969614
+Its nearest neighbor is training instance 143 which is in class 2.0
+The min distance is  0.0014639000000000735
 
 Test Instance  8 is class  2.0
-Its nearest neighbor is training instance 663 which is in class 2.0
-The min distance is  0.005693599999999854
+Its nearest neighbor is training instance 268 which is in class 2.0
+The min distance is  0.0051514999999999755
 
 Test Instance  9 is class  2.0
-Its nearest neighbor is training instance 28 which is in class 2.0
-The min distance is  0.009886199999999512
+Its nearest neighbor is training instance 32 which is in class 1.0
+The min distance is  0.004266099999999717
 
 Test Instance  10 is class  1.0
-Its nearest neighbor is training instance 776 which is in class 2.0
-The min distance is  0.0012083999999998873
+Its nearest neighbor is training instance 524 which is in class 2.0
+The min distance is  9.380000000014377e-05
 
 Test Instance  11 is class  2.0
-Its nearest neighbor is training instance 317 which is in class 2.0
-The min distance is  0.005235800000000346
+Its nearest neighbor is training instance 733 which is in class 2.0
+The min distance is  0.003438000000000052
 
 Test Instance  12 is class  2.0
-Its nearest neighbor is training instance 226 which is in class 2.0
-The min distance is  0.0030839000000000283
+Its nearest neighbor is training instance 644 which is in class 1.0
+The min distance is  0.0022804000000000713
 
 Test Instance  13 is class  2.0
-Its nearest neighbor is training instance 450 which is in class 1.0
-The min distance is  0.0014905999999998976
+Its nearest neighbor is training instance 591 which is in class 2.0
+The min distance is  0.0005820000000005265
 
 Test Instance  14 is class  2.0
-Its nearest neighbor is training instance 11 which is in class 2.0
-The min distance is  0.00028590000000017213
+Its nearest neighbor is training instance 401 which is in class 1.0
+The min distance is  0.0008749999999997371
 
 Test Instance  15 is class  2.0
-Its nearest neighbor is training instance 607 which is in class 2.0
-The min distance is  0.0002593000000001844
+Its nearest neighbor is training instance 718 which is in class 2.0
+The min distance is  0.002815800000000035
 
 Test Instance  16 is class  2.0
-Its nearest neighbor is training instance 530 which is in class 2.0
-The min distance is  0.0013054000000001231
+Its nearest neighbor is training instance 152 which is in class 2.0
+The min distance is  3.9800000000145275e-05
 
 Test Instance  17 is class  2.0
-Its nearest neighbor is training instance 443 which is in class 2.0
-The min distance is  0.0015144999999998632
+Its nearest neighbor is training instance 407 which is in class 2.0
+The min distance is  0.0008457999999995636
 
 Test Instance  18 is class  2.0
-Its nearest neighbor is training instance 629 which is in class 1.0
-The min distance is  0.00026210000000004285
+Its nearest neighbor is training instance 115 which is in class 2.0
+The min distance is  0.0009236999999999718
 
 Test Instance  19 is class  2.0
-Its nearest neighbor is training instance 21 which is in class 1.0
-The min distance is  0.001810700000000054
+Its nearest neighbor is training instance 362 which is in class 2.0
+The min distance is  0.0053467000000000375
 
 Test Instance  20 is class  2.0
-Its nearest neighbor is training instance 57 which is in class 2.0
-The min distance is  0.0025930000000000675
+Its nearest neighbor is training instance 504 which is in class 2.0
+The min distance is  0.002659500000000037
 
 Test Instance  21 is class  2.0
-Its nearest neighbor is training instance 154 which is in class 2.0
-The min distance is  0.0026409999999996714
+Its nearest neighbor is training instance 186 which is in class 2.0
+The min distance is  0.0012198000000003262
 
 Test Instance  22 is class  2.0
-Its nearest neighbor is training instance 513 which is in class 2.0
-The min distance is  0.005114300000000238
+Its nearest neighbor is training instance 91 which is in class 2.0
+The min distance is  0.003107799999999994
 
 Test Instance  23 is class  2.0
-Its nearest neighbor is training instance 241 which is in class 2.0
-The min distance is  0.000820299999999996
+Its nearest neighbor is training instance 350 which is in class 2.0
+The min distance is  0.004030199999999873
 
 Test Instance  24 is class  1.0
-Its nearest neighbor is training instance 512 which is in class 2.0
-The min distance is  0.00015020000000021128
+Its nearest neighbor is training instance 78 which is in class 1.0
+The min distance is  0.00156540000000005
 
 Test Instance  25 is class  2.0
-Its nearest neighbor is training instance 167 which is in class 2.0
-The min distance is  0.00042540000000013123
+Its nearest neighbor is training instance 708 which is in class 1.0
+The min distance is  0.0006688999999999723
 
 Test Instance  26 is class  2.0
-Its nearest neighbor is training instance 402 which is in class 2.0
-The min distance is  0.0010216999999999032
+Its nearest neighbor is training instance 693 which is in class 2.0
+The min distance is  0.0024272000000000737
 
 Test Instance  27 is class  2.0
-Its nearest neighbor is training instance 745 which is in class 2.0
-The min distance is  0.0024701000000000306
+Its nearest neighbor is training instance 759 which is in class 2.0
+The min distance is  0.0028900000000002812
 
 Test Instance  28 is class  2.0
-Its nearest neighbor is training instance 502 which is in class 1.0
-The min distance is  0.0019372999999998086
+Its nearest neighbor is training instance 430 which is in class 2.0
+The min distance is  0.00426940000000009
 
 Test Instance  29 is class  2.0
-Its nearest neighbor is training instance 757 which is in class 2.0
-The min distance is  0.002801900000000135
+Its nearest neighbor is training instance 53 which is in class 2.0
+The min distance is  0.0010020000000001694
 
 Test Instance  30 is class  2.0
-Its nearest neighbor is training instance 201 which is in class 2.0
-The min distance is  5.7299999999926854e-05
+Its nearest neighbor is training instance 537 which is in class 2.0
+The min distance is  0.002289700000000394
 
 Test Instance  31 is class  2.0
-Its nearest neighbor is training instance 706 which is in class 2.0
-The min distance is  0.004593499999999917
+Its nearest neighbor is training instance 306 which is in class 1.0
+The min distance is  0.0005063999999999069
 
 Test Instance  32 is class  2.0
-Its nearest neighbor is training instance 86 which is in class 1.0
-The min distance is  0.018682000000000087
+Its nearest neighbor is training instance 222 which is in class 2.0
+The min distance is  0.0021805000000005847
 
 Test Instance  33 is class  2.0
-Its nearest neighbor is training instance 798 which is in class 1.0
-The min distance is  0.001195200000000174
+Its nearest neighbor is training instance 794 which is in class 2.0
+The min distance is  0.00025370000000002335
 
 Test Instance  34 is class  2.0
-Its nearest neighbor is training instance 467 which is in class 2.0
-The min distance is  0.001378700000000066
+Its nearest neighbor is training instance 469 which is in class 2.0
+The min distance is  1.4699999999923108e-05
 
 Test Instance  35 is class  2.0
-Its nearest neighbor is training instance 70 which is in class 2.0
-The min distance is  0.0015298000000001366
+Its nearest neighbor is training instance 766 which is in class 2.0
+The min distance is  0.006422900000000009
 
 Test Instance  36 is class  2.0
-Its nearest neighbor is training instance 763 which is in class 2.0
-The min distance is  0.0008411000000001501
+Its nearest neighbor is training instance 151 which is in class 2.0
+The min distance is  0.0015714000000004447
 
 Test Instance  37 is class  2.0
-Its nearest neighbor is training instance 226 which is in class 2.0
-The min distance is  0.0008943999999999619
+Its nearest neighbor is training instance 778 which is in class 2.0
+The min distance is  0.004090099999999985
 
 Test Instance  38 is class  1.0
-Its nearest neighbor is training instance 517 which is in class 2.0
-The min distance is  0.0010420999999998237
+Its nearest neighbor is training instance 65 which is in class 1.0
+The min distance is  0.000665099999999974
 
 Test Instance  39 is class  2.0
-Its nearest neighbor is training instance 622 which is in class 1.0
-The min distance is  0.008913999999999866
+Its nearest neighbor is training instance 512 which is in class 2.0
+The min distance is  0.005396499999999804
 
 Test Instance  40 is class  2.0
-Its nearest neighbor is training instance 83 which is in class 2.0
-The min distance is  0.0005009999999998627
+Its nearest neighbor is training instance 499 which is in class 2.0
+The min distance is  0.031212250000000052
 
 Test Instance  41 is class  2.0
-Its nearest neighbor is training instance 52 which is in class 2.0
-The min distance is  0.004788200000000131
+Its nearest neighbor is training instance 69 which is in class 1.0
+The min distance is  0.0003999000000001196
 
 Test Instance  42 is class  1.0
-Its nearest neighbor is training instance 652 which is in class 1.0
-The min distance is  0.005842799999999926
+Its nearest neighbor is training instance 159 which is in class 2.0
+The min distance is  0.0008045999999999331
 
 Test Instance  43 is class  2.0
-Its nearest neighbor is training instance 713 which is in class 2.0
-The min distance is  0.0021812999999997196
+Its nearest neighbor is training instance 98 which is in class 2.0
+The min distance is  0.0011980999999998687
 
 Test Instance  44 is class  1.0
-Its nearest neighbor is training instance 131 which is in class 1.0
-The min distance is  0.004445199999999927
+Its nearest neighbor is training instance 509 which is in class 2.0
+The min distance is  0.00015689999999990434
 
 Test Instance  45 is class  2.0
-Its nearest neighbor is training instance 269 which is in class 2.0
-The min distance is  0.005982400000000165
+Its nearest neighbor is training instance 160 which is in class 2.0
+The min distance is  0.002222699999999911
 
 Test Instance  46 is class  1.0
-Its nearest neighbor is training instance 638 which is in class 2.0
-The min distance is  0.016711900000000002
+Its nearest neighbor is training instance 302 which is in class 1.0
+The min distance is  0.009811199999999687
 
 Test Instance  47 is class  2.0
-Its nearest neighbor is training instance 216 which is in class 2.0
-The min distance is  0.00032690000000012986
+Its nearest neighbor is training instance 186 which is in class 2.0
+The min distance is  9.370000000030743e-05
 
 Test Instance  48 is class  2.0
-Its nearest neighbor is training instance 86 which is in class 1.0
-The min distance is  0.018392799999999987
+Its nearest neighbor is training instance 501 which is in class 2.0
+The min distance is  0.0008164999999999978
 
 Test Instance  49 is class  2.0
-Its nearest neighbor is training instance 470 which is in class 1.0
-The min distance is  0.010656200000000116
+Its nearest neighbor is training instance 52 which is in class 2.0
+The min distance is  0.0007375000000000576
 
 Test Instance  50 is class  2.0
-Its nearest neighbor is training instance 223 which is in class 2.0
-The min distance is  2.3199999999778953e-05
+Its nearest neighbor is training instance 196 which is in class 2.0
+The min distance is  0.001416800000000329
 
 Test Instance  51 is class  2.0
-Its nearest neighbor is training instance 201 which is in class 2.0
-The min distance is  0.0002819000000000571
+Its nearest neighbor is training instance 743 which is in class 2.0
+The min distance is  0.02060329999999988
 
 Test Instance  52 is class  1.0
-Its nearest neighbor is training instance 681 which is in class 1.0
-The min distance is  0.0010473999999995875
+Its nearest neighbor is training instance 514 which is in class 1.0
+The min distance is  0.0028842999999998398
 
 Test Instance  53 is class  1.0
-Its nearest neighbor is training instance 602 which is in class 1.0
-The min distance is  0.005028699999999997
+Its nearest neighbor is training instance 242 which is in class 2.0
+The min distance is  0.0003232999999998043
 
 Test Instance  54 is class  1.0
-Its nearest neighbor is training instance 233 which is in class 1.0
-The min distance is  0.001084000000000529
+Its nearest neighbor is training instance 731 which is in class 2.0
+The min distance is  0.0014847999999996198
 
 Test Instance  55 is class  2.0
-Its nearest neighbor is training instance 631 which is in class 1.0
-The min distance is  0.0015400999999997111
+Its nearest neighbor is training instance 650 which is in class 2.0
+The min distance is  0.0011426000000001046
 
 Test Instance  56 is class  1.0
-Its nearest neighbor is training instance 633 which is in class 2.0
-The min distance is  0.0035658000000000634
+Its nearest neighbor is training instance 601 which is in class 2.0
+The min distance is  0.002168300000000123
 
 Test Instance  57 is class  2.0
-Its nearest neighbor is training instance 124 which is in class 2.0
-The min distance is  0.0018216999999998151
+Its nearest neighbor is training instance 198 which is in class 2.0
+The min distance is  0.002981100000000403
 
 Test Instance  58 is class  2.0
-Its nearest neighbor is training instance 140 which is in class 2.0
-The min distance is  0.0073072999999999055
+Its nearest neighbor is training instance 420 which is in class 2.0
+The min distance is  0.0033908999999998635
 
 Test Instance  59 is class  2.0
-Its nearest neighbor is training instance 580 which is in class 2.0
-The min distance is  0.0015849999999999476
+Its nearest neighbor is training instance 499 which is in class 2.0
+The min distance is  0.15811688000000002
 
 Test Instance  60 is class  2.0
-Its nearest neighbor is training instance 180 which is in class 2.0
-The min distance is  2.600000000185787e-06
+Its nearest neighbor is training instance 233 which is in class 1.0
+The min distance is  0.0007109000000000698
 
 Test Instance  61 is class  2.0
-Its nearest neighbor is training instance 391 which is in class 1.0
-The min distance is  0.0006970000000001697
+Its nearest neighbor is training instance 247 which is in class 1.0
+The min distance is  0.003673399999999827
 
 Test Instance  62 is class  2.0
-Its nearest neighbor is training instance 568 which is in class 2.0
-The min distance is  0.001850700000000316
+Its nearest neighbor is training instance 612 which is in class 2.0
+The min distance is  0.0033706000000002234
 
 Test Instance  63 is class  2.0
-Its nearest neighbor is training instance 208 which is in class 2.0
-The min distance is  0.10014669999999981
+Its nearest neighbor is training instance 484 which is in class 1.0
+The min distance is  0.0037909000000002635
 
 Test Instance  64 is class  2.0
-Its nearest neighbor is training instance 216 which is in class 2.0
-The min distance is  0.001669099999999979
+Its nearest neighbor is training instance 522 which is in class 1.0
+The min distance is  0.0009557999999998401
 
 Test Instance  65 is class  1.0
-Its nearest neighbor is training instance 366 which is in class 2.0
-The min distance is  0.0008589999999999431
+Its nearest neighbor is training instance 203 which is in class 2.0
+The min distance is  0.0031322999999998657
 
 Test Instance  66 is class  2.0
-Its nearest neighbor is training instance 551 which is in class 2.0
-The min distance is  0.0025298000000000265
+Its nearest neighbor is training instance 260 which is in class 2.0
+The min distance is  0.005708399999999836
 
 Test Instance  67 is class  2.0
-Its nearest neighbor is training instance 287 which is in class 2.0
-The min distance is  0.000708299999999884
+Its nearest neighbor is training instance 219 which is in class 2.0
+The min distance is  0.0017435999999997343
 
 Test Instance  68 is class  2.0
-Its nearest neighbor is training instance 785 which is in class 2.0
-The min distance is  0.00400109999999998
+Its nearest neighbor is training instance 773 which is in class 2.0
+The min distance is  0.004768500000000397
 
 Test Instance  69 is class  2.0
-Its nearest neighbor is training instance 345 which is in class 2.0
-The min distance is  0.0025981000000001586
+Its nearest neighbor is training instance 405 which is in class 2.0
+The min distance is  0.0004006999999996985
 
 Test Instance  70 is class  2.0
-Its nearest neighbor is training instance 557 which is in class 2.0
-The min distance is  0.0008073999999997916
+Its nearest neighbor is training instance 389 which is in class 2.0
+The min distance is  0.0005107999999998114
 
 Test Instance  71 is class  2.0
-Its nearest neighbor is training instance 419 which is in class 2.0
-The min distance is  1.4099999999572788e-05
+Its nearest neighbor is training instance 144 which is in class 2.0
+The min distance is  0.0005873000000002904
 
 Test Instance  72 is class  2.0
-Its nearest neighbor is training instance 132 which is in class 2.0
-The min distance is  0.00376120000000002
+Its nearest neighbor is training instance 422 which is in class 2.0
+The min distance is  0.0005279999999996399
 
 Test Instance  73 is class  2.0
-Its nearest neighbor is training instance 498 which is in class 2.0
-The min distance is  0.0033946000000000254
+Its nearest neighbor is training instance 411 which is in class 1.0
+The min distance is  0.0022125000000001727
 
 Test Instance  74 is class  2.0
-Its nearest neighbor is training instance 493 which is in class 2.0
-The min distance is  0.00020110000000039818
+Its nearest neighbor is training instance 218 which is in class 2.0
+The min distance is  0.0002725000000003419
 
 Test Instance  75 is class  2.0
-Its nearest neighbor is training instance 613 which is in class 2.0
-The min distance is  0.0004219000000000861
+Its nearest neighbor is training instance 450 which is in class 1.0
+The min distance is  0.00018560000000000798
 
 Test Instance  76 is class  2.0
-Its nearest neighbor is training instance 754 which is in class 2.0
-The min distance is  0.001986500000000113
+Its nearest neighbor is training instance 278 which is in class 1.0
+The min distance is  0.0011447000000002205
 
 Test Instance  77 is class  2.0
-Its nearest neighbor is training instance 243 which is in class 1.0
-The min distance is  0.00040050000000002584
+Its nearest neighbor is training instance 421 which is in class 1.0
+The min distance is  0.004879600000000206
 
 Test Instance  78 is class  2.0
-Its nearest neighbor is training instance 550 which is in class 2.0
-The min distance is  0.00022149999999987457
+Its nearest neighbor is training instance 481 which is in class 2.0
+The min distance is  0.0021035999999998722
 
 Test Instance  79 is class  2.0
-Its nearest neighbor is training instance 138 which is in class 2.0
-The min distance is  0.001956100000000127
+Its nearest neighbor is training instance 651 which is in class 2.0
+The min distance is  0.0003807000000000116
 
 Test Instance  80 is class  2.0
-Its nearest neighbor is training instance 253 which is in class 2.0
-The min distance is  0.0030162999999996387
+Its nearest neighbor is training instance 743 which is in class 2.0
+The min distance is  0.04209839999999998
 
 Test Instance  81 is class  1.0
-Its nearest neighbor is training instance 59 which is in class 2.0
-The min distance is  0.0006572000000000244
+Its nearest neighbor is training instance 411 which is in class 1.0
+The min distance is  0.003138799999999886
 
 Test Instance  82 is class  1.0
-Its nearest neighbor is training instance 749 which is in class 1.0
-The min distance is  0.00087309999999996
+Its nearest neighbor is training instance 690 which is in class 2.0
+The min distance is  0.001635499999999901
 
 Test Instance  83 is class  2.0
-Its nearest neighbor is training instance 210 which is in class 2.0
-The min distance is  0.0013331999999999233
+Its nearest neighbor is training instance 375 which is in class 2.0
+The min distance is  0.009631799999999302
 
 Test Instance  84 is class  2.0
-Its nearest neighbor is training instance 302 which is in class 1.0
-The min distance is  0.0013959999999997308
+Its nearest neighbor is training instance 2 which is in class 2.0
+The min distance is  0.0003265000000003404
 
 Test Instance  85 is class  2.0
-Its nearest neighbor is training instance 346 which is in class 2.0
-The min distance is  0.00038949999999982055
+Its nearest neighbor is training instance 269 which is in class 2.0
+The min distance is  0.0009916000000003145
 
 Test Instance  86 is class  2.0
-Its nearest neighbor is training instance 94 which is in class 2.0
-The min distance is  0.0031601999999999464
+Its nearest neighbor is training instance 465 which is in class 2.0
+The min distance is  0.019994899999999927
 
 Test Instance  87 is class  2.0
-Its nearest neighbor is training instance 213 which is in class 2.0
-The min distance is  0.0002854999999994945
+Its nearest neighbor is training instance 85 which is in class 2.0
+The min distance is  0.0030193999999998944
 
 Test Instance  88 is class  2.0
-Its nearest neighbor is training instance 75 which is in class 2.0
-The min distance is  0.002079799999999743
+Its nearest neighbor is training instance 632 which is in class 1.0
+The min distance is  0.0024904000000001147
 
 Test Instance  89 is class  1.0
-Its nearest neighbor is training instance 446 which is in class 2.0
-The min distance is  0.001852600000000315
+Its nearest neighbor is training instance 54 which is in class 2.0
+The min distance is  0.005799399999999899
 
 Test Instance  90 is class  2.0
-Its nearest neighbor is training instance 551 which is in class 2.0
-The min distance is  0.001277100000000253
+Its nearest neighbor is training instance 796 which is in class 1.0
+The min distance is  0.0013369999999999216
 
 Test Instance  91 is class  2.0
-Its nearest neighbor is training instance 330 which is in class 2.0
-The min distance is  0.0016033000000001962
+Its nearest neighbor is training instance 360 which is in class 1.0
+The min distance is  0.00037250000000010886
 
 Test Instance  92 is class  2.0
-Its nearest neighbor is training instance 715 which is in class 2.0
-The min distance is  0.000351200000000329
+Its nearest neighbor is training instance 394 which is in class 2.0
+The min distance is  0.001193600000000128
 
 Test Instance  93 is class  1.0
-Its nearest neighbor is training instance 222 which is in class 2.0
-The min distance is  0.0008465000000001943
+Its nearest neighbor is training instance 297 which is in class 1.0
+The min distance is  0.0008554000000002837
 
 Test Instance  94 is class  2.0
-Its nearest neighbor is training instance 76 which is in class 1.0
-The min distance is  0.0021863999999998107
+Its nearest neighbor is training instance 660 which is in class 2.0
+The min distance is  4.120000000007451e-05
 
 Test Instance  95 is class  1.0
-Its nearest neighbor is training instance 336 which is in class 2.0
-The min distance is  0.003852699999999931
+Its nearest neighbor is training instance 42 which is in class 2.0
+The min distance is  0.00028539999999965815
 
 Test Instance  96 is class  2.0
-Its nearest neighbor is training instance 164 which is in class 2.0
-The min distance is  0.01370910000000003
+Its nearest neighbor is training instance 126 which is in class 2.0
+The min distance is  0.0006542999999998855
 
 Test Instance  97 is class  2.0
-Its nearest neighbor is training instance 71 which is in class 2.0
-The min distance is  0.0030284999999996565
+Its nearest neighbor is training instance 184 which is in class 2.0
+The min distance is  0.004293960000000041
 
 Test Instance  98 is class  2.0
-Its nearest neighbor is training instance 750 which is in class 1.0
-The min distance is  0.0014989000000000807
+Its nearest neighbor is training instance 118 which is in class 2.0
+The min distance is  0.00010170000000009338
 
 Test Instance  99 is class  2.0
-Its nearest neighbor is training instance 617 which is in class 2.0
-The min distance is  0.0008258000000003207
+Its nearest neighbor is training instance 796 which is in class 1.0
+The min distance is  0.0009920999999999403
 
 Test Instance  100 is class  2.0
-Its nearest neighbor is training instance 706 which is in class 2.0
-The min distance is  0.00015909999999985658
+Its nearest neighbor is training instance 736 which is in class 2.0
+The min distance is  0.00037800000000043354
 
 Test Instance  101 is class  1.0
-Its nearest neighbor is training instance 164 which is in class 2.0
-The min distance is  0.0047775999999999375
+Its nearest neighbor is training instance 243 which is in class 1.0
+The min distance is  0.0004914000000000307
 
 Test Instance  102 is class  1.0
-Its nearest neighbor is training instance 662 which is in class 2.0
-The min distance is  8.590000000019415e-05
+Its nearest neighbor is training instance 69 which is in class 1.0
+The min distance is  0.003980100000000153
 
 Test Instance  103 is class  2.0
-Its nearest neighbor is training instance 558 which is in class 2.0
-The min distance is  0.004035299999999964
+Its nearest neighbor is training instance 263 which is in class 2.0
+The min distance is  0.002968899999999941
 
 Test Instance  104 is class  2.0
-Its nearest neighbor is training instance 272 which is in class 1.0
-The min distance is  0.008932600000000068
+Its nearest neighbor is training instance 276 which is in class 1.0
+The min distance is  0.0032064000000002757
 
 Test Instance  105 is class  2.0
-Its nearest neighbor is training instance 238 which is in class 2.0
-The min distance is  0.0021724000000000743
+Its nearest neighbor is training instance 660 which is in class 2.0
+The min distance is  0.0010978000000001487
 
 Test Instance  106 is class  2.0
-Its nearest neighbor is training instance 784 which is in class 2.0
-The min distance is  0.0003714999999999691
+Its nearest neighbor is training instance 42 which is in class 2.0
+The min distance is  0.0003379999999997274
 
 Test Instance  107 is class  2.0
-Its nearest neighbor is training instance 466 which is in class 2.0
-The min distance is  0.0007190999999999725
+Its nearest neighbor is training instance 490 which is in class 2.0
+The min distance is  0.005302599999999824
 
 Test Instance  108 is class  2.0
-Its nearest neighbor is training instance 793 which is in class 2.0
-The min distance is  0.0012911999999998258
+Its nearest neighbor is training instance 437 which is in class 2.0
+The min distance is  0.007943100000000314
 
 Test Instance  109 is class  2.0
-Its nearest neighbor is training instance 243 which is in class 1.0
-The min distance is  0.002882800000000074
+Its nearest neighbor is training instance 210 which is in class 2.0
+The min distance is  0.002637999999999696
 
 Test Instance  110 is class  2.0
-Its nearest neighbor is training instance 147 which is in class 2.0
-The min distance is  0.0023428999999994815
+Its nearest neighbor is training instance 300 which is in class 2.0
+The min distance is  7.599999999996498e-05
 
 Test Instance  111 is class  2.0
-Its nearest neighbor is training instance 340 which is in class 1.0
-The min distance is  0.0025997000000002046
+Its nearest neighbor is training instance 61 which is in class 1.0
+The min distance is  0.002708900000000014
 
 Test Instance  112 is class  1.0
-Its nearest neighbor is training instance 500 which is in class 2.0
-The min distance is  0.0061851000000001655
+Its nearest neighbor is training instance 469 which is in class 2.0
+The min distance is  0.0010367000000002236
 
 Test Instance  113 is class  2.0
-Its nearest neighbor is training instance 517 which is in class 2.0
-The min distance is  0.0013874000000000386
+Its nearest neighbor is training instance 62 which is in class 1.0
+The min distance is  0.0016728999999999772
 
 Test Instance  114 is class  2.0
-Its nearest neighbor is training instance 34 which is in class 1.0
-The min distance is  0.006255899999999981
+Its nearest neighbor is training instance 163 which is in class 2.0
+The min distance is  0.00032159999999992195
 
 Test Instance  115 is class  2.0
-Its nearest neighbor is training instance 524 which is in class 2.0
-The min distance is  0.0002458999999999101
+Its nearest neighbor is training instance 466 which is in class 2.0
+The min distance is  0.0009166000000000452
 
 Test Instance  116 is class  2.0
-Its nearest neighbor is training instance 28 which is in class 2.0
-The min distance is  0.018728500000000814
+Its nearest neighbor is training instance 290 which is in class 2.0
+The min distance is  0.002578500000000261
 
 Test Instance  117 is class  2.0
-Its nearest neighbor is training instance 275 which is in class 2.0
-The min distance is  0.00088430000000006
+Its nearest neighbor is training instance 309 which is in class 2.0
+The min distance is  0.003260100000000321
 
 Test Instance  118 is class  1.0
-Its nearest neighbor is training instance 680 which is in class 2.0
-The min distance is  0.0020414999999998074
+Its nearest neighbor is training instance 185 which is in class 2.0
+The min distance is  0.0008601999999999776
 
 Test Instance  119 is class  1.0
-Its nearest neighbor is training instance 476 which is in class 2.0
-The min distance is  0.005711800000000267
+Its nearest neighbor is training instance 447 which is in class 2.0
+The min distance is  0.001379800000000042
 
 Test Instance  120 is class  2.0
-Its nearest neighbor is training instance 497 which is in class 2.0
-The min distance is  0.0005851999999997304
+Its nearest neighbor is training instance 342 which is in class 2.0
+The min distance is  0.0006447000000000536
 
 Test Instance  121 is class  2.0
-Its nearest neighbor is training instance 483 which is in class 1.0
-The min distance is  0.001923800000000142
+Its nearest neighbor is training instance 560 which is in class 2.0
+The min distance is  0.002987500000000143
 
 Test Instance  122 is class  2.0
-Its nearest neighbor is training instance 428 which is in class 2.0
-The min distance is  0.0008951000000001486
+Its nearest neighbor is training instance 738 which is in class 2.0
+The min distance is  0.00995780000000046
 
 Test Instance  123 is class  1.0
-Its nearest neighbor is training instance 347 which is in class 1.0
-The min distance is  0.0028176000000001977
+Its nearest neighbor is training instance 154 which is in class 2.0
+The min distance is  0.0020731999999998862
 
 Test Instance  124 is class  2.0
-Its nearest neighbor is training instance 550 which is in class 2.0
-The min distance is  0.0006232999999999933
+Its nearest neighbor is training instance 189 which is in class 1.0
+The min distance is  0.0019255000000000244
 
 Test Instance  125 is class  2.0
-Its nearest neighbor is training instance 446 which is in class 2.0
-The min distance is  0.0006857000000000113
+Its nearest neighbor is training instance 601 which is in class 2.0
+The min distance is  0.0012710999999998585
 
 Test Instance  126 is class  1.0
-Its nearest neighbor is training instance 221 which is in class 2.0
-The min distance is  0.0027840000000001197
+Its nearest neighbor is training instance 585 which is in class 2.0
+The min distance is  0.0014228000000002794
 
 Test Instance  127 is class  2.0
-Its nearest neighbor is training instance 655 which is in class 2.0
-The min distance is  0.00210189999999999
+Its nearest neighbor is training instance 526 which is in class 1.0
+The min distance is  0.0016821000000000197
 
 Test Instance  128 is class  2.0
-Its nearest neighbor is training instance 185 which is in class 2.0
-The min distance is  0.0020375000000001364
+Its nearest neighbor is training instance 308 which is in class 2.0
+The min distance is  0.0012427999999999884
 
 Test Instance  129 is class  2.0
-Its nearest neighbor is training instance 412 which is in class 2.0
-The min distance is  0.000932300000000108
+Its nearest neighbor is training instance 745 which is in class 2.0
+The min distance is  0.0004059000000000701
 
 Test Instance  130 is class  2.0
-Its nearest neighbor is training instance 703 which is in class 2.0
-The min distance is  0.00044730000000003933
+Its nearest neighbor is training instance 249 which is in class 2.0
+The min distance is  0.002082499999999765
 
 Test Instance  131 is class  2.0
-Its nearest neighbor is training instance 538 which is in class 2.0
-The min distance is  0.0043301000000002254
+Its nearest neighbor is training instance 623 which is in class 1.0
+The min distance is  0.00278939999999972
 
 Test Instance  132 is class  2.0
-Its nearest neighbor is training instance 543 which is in class 2.0
-The min distance is  0.005430099999999882
+Its nearest neighbor is training instance 52 which is in class 2.0
+The min distance is  0.0002284000000001285
 
 Test Instance  133 is class  2.0
-Its nearest neighbor is training instance 746 which is in class 2.0
-The min distance is  7.089999999987384e-05
+Its nearest neighbor is training instance 451 which is in class 2.0
+The min distance is  0.002045199999999525
 
 Test Instance  134 is class  1.0
-Its nearest neighbor is training instance 115 which is in class 2.0
-The min distance is  0.00037280000000006197
+Its nearest neighbor is training instance 608 which is in class 1.0
+The min distance is  0.00038319999999991694
 
 Test Instance  135 is class  2.0
-Its nearest neighbor is training instance 748 which is in class 2.0
-The min distance is  0.00011630000000018015
+Its nearest neighbor is training instance 88 which is in class 2.0
+The min distance is  0.00033180000000010423
 
 Test Instance  136 is class  2.0
-Its nearest neighbor is training instance 411 which is in class 1.0
-The min distance is  0.003808400000000045
+Its nearest neighbor is training instance 30 which is in class 1.0
+The min distance is  0.0004185000000003214
 
 Test Instance  137 is class  2.0
-Its nearest neighbor is training instance 517 which is in class 2.0
-The min distance is  0.0012399999999996858
+Its nearest neighbor is training instance 437 which is in class 2.0
+The min distance is  0.009652500000000508
 
 Test Instance  138 is class  2.0
-Its nearest neighbor is training instance 604 which is in class 2.0
-The min distance is  0.0004729999999999457
+Its nearest neighbor is training instance 261 which is in class 2.0
+The min distance is  0.0006724999999998538
 
 Test Instance  139 is class  2.0
-Its nearest neighbor is training instance 758 which is in class 2.0
-The min distance is  0.0020402000000001586
+Its nearest neighbor is training instance 24 which is in class 2.0
+The min distance is  0.0011768000000000889
 
 Test Instance  140 is class  2.0
-Its nearest neighbor is training instance 165 which is in class 2.0
-The min distance is  0.00905339999999999
+Its nearest neighbor is training instance 438 which is in class 2.0
+The min distance is  0.004092999999999236
 
 Test Instance  141 is class  1.0
-Its nearest neighbor is training instance 354 which is in class 2.0
-The min distance is  0.029474
+Its nearest neighbor is training instance 188 which is in class 1.0
+The min distance is  0.0004883000000002191
 
 Test Instance  142 is class  2.0
-Its nearest neighbor is training instance 107 which is in class 2.0
-The min distance is  0.007230199999999964
+Its nearest neighbor is training instance 60 which is in class 2.0
+The min distance is  0.0002737000000001544
 
 Test Instance  143 is class  2.0
-Its nearest neighbor is training instance 341 which is in class 2.0
-The min distance is  0.0027476000000001832
+Its nearest neighbor is training instance 728 which is in class 2.0
+The min distance is  0.0008787000000003431
 
 Test Instance  144 is class  2.0
-Its nearest neighbor is training instance 776 which is in class 2.0
-The min distance is  0.001000300000000287
+Its nearest neighbor is training instance 411 which is in class 1.0
+The min distance is  0.001761899999999983
 
 Test Instance  145 is class  2.0
-Its nearest neighbor is training instance 507 which is in class 2.0
-The min distance is  0.000674699999999806
+Its nearest neighbor is training instance 178 which is in class 2.0
+The min distance is  0.0008061000000001428
 
 Test Instance  146 is class  2.0
-Its nearest neighbor is training instance 267 which is in class 2.0
-The min distance is  0.0006390999999998925
+Its nearest neighbor is training instance 491 which is in class 2.0
+The min distance is  0.012766099999999891
 
 Test Instance  147 is class  2.0
-Its nearest neighbor is training instance 584 which is in class 2.0
-The min distance is  0.0005804999999998728
+Its nearest neighbor is training instance 465 which is in class 2.0
+The min distance is  0.0458113
 
 Test Instance  148 is class  1.0
-Its nearest neighbor is training instance 444 which is in class 1.0
-The min distance is  0.0013453000000001047
+Its nearest neighbor is training instance 595 which is in class 2.0
+The min distance is  0.005008999999999819
 
 Test Instance  149 is class  2.0
-Its nearest neighbor is training instance 483 which is in class 1.0
-The min distance is  0.002540299999999718
+Its nearest neighbor is training instance 742 which is in class 2.0
+The min distance is  0.000620800000000088
 
 Test Instance  150 is class  2.0
-Its nearest neighbor is training instance 782 which is in class 2.0
-The min distance is  0.0009064999999992551
+Its nearest neighbor is training instance 663 which is in class 2.0
+The min distance is  0.00011000000000027654
 
 Test Instance  151 is class  2.0
-Its nearest neighbor is training instance 638 which is in class 2.0
-The min distance is  0.019688499999999998
+Its nearest neighbor is training instance 466 which is in class 2.0
+The min distance is  0.0010383000000002696
 
 Test Instance  152 is class  2.0
-Its nearest neighbor is training instance 62 which is in class 1.0
-The min distance is  8.900000000089392e-06
+Its nearest neighbor is training instance 403 which is in class 2.0
+The min distance is  0.011307500000000026
 
 Test Instance  153 is class  2.0
-Its nearest neighbor is training instance 237 which is in class 2.0
-The min distance is  0.0023505999999997584
+Its nearest neighbor is training instance 41 which is in class 2.0
+The min distance is  0.003559099999999926
 
 Test Instance  154 is class  1.0
-Its nearest neighbor is training instance 97 which is in class 2.0
-The min distance is  0.00012679999999987146
+Its nearest neighbor is training instance 41 which is in class 2.0
+The min distance is  0.0015526999999999624
 
 Test Instance  155 is class  2.0
-Its nearest neighbor is training instance 581 which is in class 2.0
-The min distance is  0.0022606999999998934
+Its nearest neighbor is training instance 481 which is in class 2.0
+The min distance is  0.0017568999999997281
 
 Test Instance  156 is class  2.0
-Its nearest neighbor is training instance 48 which is in class 2.0
-The min distance is  0.011215100000000033
+Its nearest neighbor is training instance 243 which is in class 1.0
+The min distance is  0.0024567000000002004
 
 Test Instance  157 is class  2.0
-Its nearest neighbor is training instance 71 which is in class 2.0
-The min distance is  0.0031140999999998975
+Its nearest neighbor is training instance 173 which is in class 1.0
+The min distance is  0.0030895000000001893
 
 Test Instance  158 is class  1.0
-Its nearest neighbor is training instance 551 which is in class 2.0
-The min distance is  0.002357400000000176
+Its nearest neighbor is training instance 590 which is in class 2.0
+The min distance is  0.007598400000000005
 
 Test Instance  159 is class  2.0
-Its nearest neighbor is training instance 366 which is in class 2.0
-The min distance is  8.42999999999261e-05
+Its nearest neighbor is training instance 529 which is in class 2.0
+The min distance is  0.0048592000000000635
 
 Test Instance  160 is class  2.0
-Its nearest neighbor is training instance 580 which is in class 2.0
-The min distance is  0.004798300000000033
+Its nearest neighbor is training instance 30 which is in class 1.0
+The min distance is  0.0029079000000002964
 
 Test Instance  161 is class  2.0
-Its nearest neighbor is training instance 225 which is in class 2.0
-The min distance is  0.010330399999999962
+Its nearest neighbor is training instance 419 which is in class 2.0
+The min distance is  0.0030063999999998536
 
 Test Instance  162 is class  2.0
-Its nearest neighbor is training instance 615 which is in class 2.0
-The min distance is  0.0002173999999999232
+Its nearest neighbor is training instance 791 which is in class 2.0
+The min distance is  0.0006767000000000856
 
 Test Instance  163 is class  2.0
-Its nearest neighbor is training instance 107 which is in class 2.0
-The min distance is  0.0005188999999998778
+Its nearest neighbor is training instance 86 which is in class 1.0
+The min distance is  0.0015898000000000856
 
 Test Instance  164 is class  2.0
-Its nearest neighbor is training instance 638 which is in class 2.0
-The min distance is  0.009555800000000003
+Its nearest neighbor is training instance 2 which is in class 2.0
+The min distance is  0.00014620000000009625
 
 Test Instance  165 is class  2.0
-Its nearest neighbor is training instance 496 which is in class 2.0
-The min distance is  0.0009041000000000743
+Its nearest neighbor is training instance 613 which is in class 2.0
+The min distance is  0.0022191000000000294
 
 Test Instance  166 is class  2.0
-Its nearest neighbor is training instance 785 which is in class 2.0
-The min distance is  0.0014473999999999876
+Its nearest neighbor is training instance 666 which is in class 2.0
+The min distance is  0.005704699999999896
 
 Test Instance  167 is class  2.0
-Its nearest neighbor is training instance 45 which is in class 2.0
-The min distance is  0.00041679999999999495
+Its nearest neighbor is training instance 156 which is in class 1.0
+The min distance is  0.0005882999999999861
 
 Test Instance  168 is class  1.0
-Its nearest neighbor is training instance 43 which is in class 2.0
-The min distance is  0.0001415999999996309
+Its nearest neighbor is training instance 745 which is in class 2.0
+The min distance is  0.004514100000000187
 
 Test Instance  169 is class  2.0
-Its nearest neighbor is training instance 321 which is in class 2.0
-The min distance is  0.0008757000000003679
+Its nearest neighbor is training instance 647 which is in class 2.0
+The min distance is  0.0011850799999999495
 
 Test Instance  170 is class  2.0
-Its nearest neighbor is training instance 683 which is in class 2.0
-The min distance is  0.0011673999999999296
+Its nearest neighbor is training instance 322 which is in class 2.0
+The min distance is  0.0024557000000000606
 
 Test Instance  171 is class  1.0
-Its nearest neighbor is training instance 778 which is in class 2.0
-The min distance is  0.0026333699999999682
+Its nearest neighbor is training instance 730 which is in class 2.0
+The min distance is  0.0005512999999996993
 
 Test Instance  172 is class  1.0
-Its nearest neighbor is training instance 498 which is in class 2.0
-The min distance is  0.005358200000000313
+Its nearest neighbor is training instance 676 which is in class 1.0
+The min distance is  0.0012664000000000009
 
 Test Instance  173 is class  2.0
-Its nearest neighbor is training instance 211 which is in class 1.0
-The min distance is  0.00044930000000009684
+Its nearest neighbor is training instance 33 which is in class 1.0
+The min distance is  0.0031448000000002807
 
 Test Instance  174 is class  2.0
-Its nearest neighbor is training instance 332 which is in class 2.0
-The min distance is  0.006725199999999987
+Its nearest neighbor is training instance 359 which is in class 2.0
+The min distance is  0.0002585999999999977
 
 Test Instance  175 is class  2.0
-Its nearest neighbor is training instance 361 which is in class 2.0
-The min distance is  8.020000000019678e-05
+Its nearest neighbor is training instance 539 which is in class 2.0
+The min distance is  0.0002463000000001436
 
 Test Instance  176 is class  2.0
-Its nearest neighbor is training instance 162 which is in class 2.0
-The min distance is  0.0006949999999998902
+Its nearest neighbor is training instance 601 which is in class 2.0
+The min distance is  0.002938700000000072
 
 Test Instance  177 is class  2.0
-Its nearest neighbor is training instance 475 which is in class 1.0
-The min distance is  0.0006284999999994767
+Its nearest neighbor is training instance 776 which is in class 2.0
+The min distance is  0.0009103000000001416
 
 Test Instance  178 is class  2.0
-Its nearest neighbor is training instance 402 which is in class 2.0
-The min distance is  0.003969099999999948
+Its nearest neighbor is training instance 456 which is in class 2.0
+The min distance is  0.00299959999999988
 
 Test Instance  179 is class  2.0
-Its nearest neighbor is training instance 415 which is in class 2.0
-The min distance is  0.00010059999999967317
+Its nearest neighbor is training instance 780 which is in class 2.0
+The min distance is  0.005284099999999903
 
 Test Instance  180 is class  2.0
-Its nearest neighbor is training instance 227 which is in class 2.0
-The min distance is  0.0037538999999999767
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  0.005136299999999316
 
 Test Instance  181 is class  2.0
-Its nearest neighbor is training instance 239 which is in class 2.0
-The min distance is  0.0009961999999998916
+Its nearest neighbor is training instance 734 which is in class 2.0
+The min distance is  0.002165900000000054
 
 Test Instance  182 is class  1.0
-Its nearest neighbor is training instance 576 which is in class 1.0
-The min distance is  6.839999999996849e-05
+Its nearest neighbor is training instance 93 which is in class 1.0
+The min distance is  0.0011453000000001268
 
 Test Instance  183 is class  2.0
-Its nearest neighbor is training instance 120 which is in class 2.0
-The min distance is  0.0013941000000001758
+Its nearest neighbor is training instance 232 which is in class 2.0
+The min distance is  0.001029100000000005
 
 Test Instance  184 is class  2.0
-Its nearest neighbor is training instance 56 which is in class 2.0
-The min distance is  0.001010400000000189
+Its nearest neighbor is training instance 745 which is in class 2.0
+The min distance is  0.005226100000000233
 
 Test Instance  185 is class  2.0
-Its nearest neighbor is training instance 522 which is in class 1.0
-The min distance is  0.0009620999999999658
+Its nearest neighbor is training instance 751 which is in class 2.0
+The min distance is  0.0035573000000002075
 
 Test Instance  186 is class  2.0
-Its nearest neighbor is training instance 476 which is in class 2.0
-The min distance is  0.00289880000000009
+Its nearest neighbor is training instance 130 which is in class 2.0
+The min distance is  0.0003698000000000867
 
 Test Instance  187 is class  2.0
-Its nearest neighbor is training instance 345 which is in class 2.0
-The min distance is  0.00013280000000026604
+Its nearest neighbor is training instance 393 which is in class 2.0
+The min distance is  0.0006001000000002144
 
 Test Instance  188 is class  2.0
-Its nearest neighbor is training instance 50 which is in class 2.0
-The min distance is  0.005848900000000157
+Its nearest neighbor is training instance 95 which is in class 2.0
+The min distance is  0.002729900000000285
 
 Test Instance  189 is class  2.0
-Its nearest neighbor is training instance 598 which is in class 1.0
-The min distance is  0.005812600000000501
+Its nearest neighbor is training instance 734 which is in class 2.0
+The min distance is  0.000496800000000075
 
 Test Instance  190 is class  2.0
-Its nearest neighbor is training instance 420 which is in class 2.0
-The min distance is  0.000647200000000181
+Its nearest neighbor is training instance 184 which is in class 2.0
+The min distance is  0.013457970000000041
 
 Test Instance  191 is class  1.0
-Its nearest neighbor is training instance 776 which is in class 2.0
-The min distance is  0.001923799999999698
+Its nearest neighbor is training instance 576 which is in class 1.0
+The min distance is  0.000456000000000234
 
 Test Instance  192 is class  2.0
-Its nearest neighbor is training instance 295 which is in class 2.0
-The min distance is  0.0007258000000001097
+Its nearest neighbor is training instance 491 which is in class 2.0
+The min distance is  0.010674599999999979
 
 Test Instance  193 is class  2.0
-Its nearest neighbor is training instance 326 which is in class 2.0
-The min distance is  0.002562500000000023
+Its nearest neighbor is training instance 554 which is in class 2.0
+The min distance is  6.53000000001569e-05
 
 Test Instance  194 is class  2.0
-Its nearest neighbor is training instance 796 which is in class 1.0
-The min distance is  0.0008535999999996768
+Its nearest neighbor is training instance 171 which is in class 2.0
+The min distance is  8.699999999972619e-05
 
 Test Instance  195 is class  2.0
-Its nearest neighbor is training instance 241 which is in class 2.0
-The min distance is  0.003612099999999785
+Its nearest neighbor is training instance 366 which is in class 2.0
+The min distance is  0.006671499999999941
 
 Test Instance  196 is class  2.0
-Its nearest neighbor is training instance 606 which is in class 2.0
-The min distance is  0.001750700000000105
+Its nearest neighbor is training instance 751 which is in class 2.0
+The min distance is  0.003589199999999959
 
 Test Instance  197 is class  2.0
-Its nearest neighbor is training instance 595 which is in class 2.0
-The min distance is  0.0023100000000000342
+Its nearest neighbor is training instance 384 which is in class 1.0
+The min distance is  0.0003134000000000192
 
 Test Instance  198 is class  1.0
-Its nearest neighbor is training instance 780 which is in class 2.0
-The min distance is  0.0013659999999999783
+Its nearest neighbor is training instance 582 which is in class 1.0
+The min distance is  0.0002971000000000501
 
 Test Instance  199 is class  2.0
-Its nearest neighbor is training instance 337 which is in class 2.0
-The min distance is  0.0009201999999999266
+Its nearest neighbor is training instance 420 which is in class 2.0
+The min distance is  0.0010632999999997672
+
+Classification Elapsed Time: 0.28983092308044434 seconds
+
+---------------------------------------------------------RUNNING BACKWARD SELECTION ON SMALL DATASET---------------------------------------------------
+Welcome to the Feature Selection Algorithm.
+
+Please enter total number of features: 5
+
+1 - Forward Selection
+2 - Backward Elimination
+Type the number of the algorithm you want to run: 2
+
+Beginning search.
+
+Using feature(s)  [1, 2, 3, 4, 5]  accuracy is  50.49
+Using feature(s)  [2, 3, 4, 5]  accuracy is  9.77
+Using feature(s)  [1, 3, 4, 5]  accuracy is  46.44
+Using feature(s)  [1, 2, 4, 5]  accuracy is  51.72
+Using feature(s)  [1, 2, 3, 5]  accuracy is  3.5
+Using feature(s)  [1, 2, 3, 4]  accuracy is  99.74
+Feature set  [1, 2, 3, 4]  was best, accuracy is  99.74 %
+Using feature(s)  [2, 3, 4]  accuracy is  32.04
+Using feature(s)  [1, 3, 4]  accuracy is  13.84
+Using feature(s)  [1, 2, 4]  accuracy is  83.99
+Using feature(s)  [1, 2, 3]  accuracy is  74.85
+Warning! accuracy has decreased!So we stop searching..
+Feature set  [1, 2, 3, 4]  was best, accuracy is  99.74 %
+
+Feature Selection Elapsed Time: 0.00022101402282714844 seconds
+Using features  [1, 2, 3, 4]
+
+Test Instance  0 is class  2.0
+Its nearest neighbor is training instance 68 which is in class 2.0
+The min distance is  1.179061522568446
+
+Test Instance  1 is class  1.0
+Its nearest neighbor is training instance 60 which is in class 2.0
+The min distance is  0.8601291085787122
+
+Test Instance  2 is class  2.0
+Its nearest neighbor is training instance 66 which is in class 1.0
+The min distance is  0.6496291230175819
+
+Test Instance  3 is class  2.0
+Its nearest neighbor is training instance 17 which is in class 2.0
+The min distance is  1.395489630447048
+
+Test Instance  4 is class  1.0
+Its nearest neighbor is training instance 54 which is in class 2.0
+The min distance is  0.9588849298316664
+
+Test Instance  5 is class  1.0
+Its nearest neighbor is training instance 33 which is in class 2.0
+The min distance is  0.4298390320319336
+
+Test Instance  6 is class  2.0
+Its nearest neighbor is training instance 49 which is in class 2.0
+The min distance is  0.5931126483451353
+
+Test Instance  7 is class  1.0
+Its nearest neighbor is training instance 8 which is in class 2.0
+The min distance is  0.9282069943052735
+
+Test Instance  8 is class  1.0
+Its nearest neighbor is training instance 72 which is in class 2.0
+The min distance is  1.780555809716424
+
+Test Instance  9 is class  2.0
+Its nearest neighbor is training instance 3 which is in class 2.0
+The min distance is  0.5840898785855995
+
+Test Instance  10 is class  2.0
+Its nearest neighbor is training instance 32 which is in class 2.0
+The min distance is  1.3277712535267763
+
+Test Instance  11 is class  2.0
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  0.5610306336803279
+
+Test Instance  12 is class  2.0
+Its nearest neighbor is training instance 35 which is in class 2.0
+The min distance is  1.641480139971245
+
+Test Instance  13 is class  2.0
+Its nearest neighbor is training instance 27 which is in class 1.0
+The min distance is  1.2049256119730047
+
+Test Instance  14 is class  1.0
+Its nearest neighbor is training instance 21 which is in class 2.0
+The min distance is  0.4296522988169737
+
+Test Instance  15 is class  2.0
+Its nearest neighbor is training instance 45 which is in class 2.0
+The min distance is  1.1056821043680363
+
+Test Instance  16 is class  2.0
+Its nearest neighbor is training instance 25 which is in class 1.0
+The min distance is  0.9787932794968813
+
+Test Instance  17 is class  1.0
+Its nearest neighbor is training instance 45 which is in class 2.0
+The min distance is  0.8243155462517858
+
+Test Instance  18 is class  2.0
+Its nearest neighbor is training instance 28 which is in class 2.0
+The min distance is  0.6376564223095226
+
+Test Instance  19 is class  2.0
+Its nearest neighbor is training instance 3 which is in class 2.0
+The min distance is  1.1848405348636033
+
+Classification Elapsed Time: 0.012022018432617188 seconds
 
 
 ---------------------------------------------------------RUNNING BACKWARD SELECTION ON LARGE DATASET---------------------------------------------------
@@ -1052,821 +1066,821 @@ Type the number of the algorithm you want to run: 2
 
 Beginning search.
 
-Using feature(s)  [1, 2, 3, 4, 5]  accuracy is  30.66
-Using feature(s)  [2, 3, 4, 5]  accuracy is  90.82
-Using feature(s)  [1, 3, 4, 5]  accuracy is  28.74
-Using feature(s)  [1, 2, 4, 5]  accuracy is  35.02
-Using feature(s)  [1, 2, 3, 5]  accuracy is  33.39
-Using feature(s)  [1, 2, 3, 4]  accuracy is  85.25
-Feature set  [2, 3, 4, 5]  was best, accuracy is  90.82 %
-Using feature(s)  [3, 4, 5]  accuracy is  91.35
-Using feature(s)  [2, 4, 5]  accuracy is  8.49
-Using feature(s)  [2, 3, 5]  accuracy is  84.63
-Using feature(s)  [2, 3, 4]  accuracy is  76.79
-Feature set  [3, 4, 5]  was best, accuracy is  91.35 %
-Using feature(s)  [4, 5]  accuracy is  68.06
-Using feature(s)  [3, 5]  accuracy is  29.4
-Using feature(s)  [3, 4]  accuracy is  27.89
+Using feature(s)  [1, 2, 3, 4, 5]  accuracy is  47.34
+Using feature(s)  [2, 3, 4, 5]  accuracy is  81.28
+Using feature(s)  [1, 3, 4, 5]  accuracy is  51.67
+Using feature(s)  [1, 2, 4, 5]  accuracy is  4.21
+Using feature(s)  [1, 2, 3, 5]  accuracy is  78.61
+Using feature(s)  [1, 2, 3, 4]  accuracy is  44.44
+Feature set  [2, 3, 4, 5]  was best, accuracy is  81.28 %
+Using feature(s)  [3, 4, 5]  accuracy is  21.53
+Using feature(s)  [2, 4, 5]  accuracy is  53.27
+Using feature(s)  [2, 3, 5]  accuracy is  44.74
+Using feature(s)  [2, 3, 4]  accuracy is  0.49
 Warning! accuracy has decreased!So we stop searching..
-Feature set  [3, 4, 5]  was best, accuracy is  91.35 %
-Using features  [3, 4, 5]
+Feature set  [2, 3, 4, 5]  was best, accuracy is  81.28 %
+
+Feature Selection Elapsed Time: 0.00031113624572753906 seconds
+Using features  [2, 3, 4, 5]
 
 Test Instance  0 is class  2.0
-Its nearest neighbor is training instance 689 which is in class 2.0
-The min distance is  0.09365366463764252
+Its nearest neighbor is training instance 546 which is in class 2.0
+The min distance is  0.24279611301956616
 
 Test Instance  1 is class  2.0
 Its nearest neighbor is training instance 680 which is in class 2.0
-The min distance is  0.07051101180021399
+The min distance is  0.17828168387764867
 
 Test Instance  2 is class  2.0
-Its nearest neighbor is training instance 584 which is in class 2.0
-The min distance is  0.31739717086413993
+Its nearest neighbor is training instance 592 which is in class 2.0
+The min distance is  0.48578482804564793
 
 Test Instance  3 is class  2.0
 Its nearest neighbor is training instance 388 which is in class 2.0
-The min distance is  0.17813577002146394
+The min distance is  0.5317587060973709
 
 Test Instance  4 is class  1.0
 Its nearest neighbor is training instance 357 which is in class 2.0
-The min distance is  0.2929223498931756
+The min distance is  0.38685644924109763
 
 Test Instance  5 is class  2.0
-Its nearest neighbor is training instance 112 which is in class 2.0
-The min distance is  0.3130713074646059
+Its nearest neighbor is training instance 586 which is in class 2.0
+The min distance is  0.76713982749117
 
 Test Instance  6 is class  2.0
 Its nearest neighbor is training instance 291 which is in class 2.0
-The min distance is  0.7459227434824226
+The min distance is  0.7471121080456292
 
 Test Instance  7 is class  2.0
 Its nearest neighbor is training instance 53 which is in class 2.0
-The min distance is  0.12920390304205207
+The min distance is  0.3153527108772968
 
 Test Instance  8 is class  2.0
-Its nearest neighbor is training instance 666 which is in class 2.0
-The min distance is  0.29466443984040563
+Its nearest neighbor is training instance 147 which is in class 2.0
+The min distance is  0.5693893702485673
 
 Test Instance  9 is class  2.0
-Its nearest neighbor is training instance 751 which is in class 2.0
-The min distance is  0.15865815970989308
+Its nearest neighbor is training instance 525 which is in class 2.0
+The min distance is  0.4797737646068094
 
 Test Instance  10 is class  1.0
 Its nearest neighbor is training instance 277 which is in class 2.0
-The min distance is  0.4178261030963715
+The min distance is  0.5435566632871955
 
 Test Instance  11 is class  2.0
-Its nearest neighbor is training instance 783 which is in class 2.0
-The min distance is  0.14018900793503772
+Its nearest neighbor is training instance 483 which is in class 1.0
+The min distance is  0.3264347404061949
 
 Test Instance  12 is class  2.0
-Its nearest neighbor is training instance 116 which is in class 2.0
-The min distance is  0.18274448792193407
+Its nearest neighbor is training instance 314 which is in class 2.0
+The min distance is  0.34210360380545535
 
 Test Instance  13 is class  2.0
-Its nearest neighbor is training instance 14 which is in class 2.0
-The min distance is  0.10006956166017712
+Its nearest neighbor is training instance 637 which is in class 1.0
+The min distance is  0.32131028613318596
 
 Test Instance  14 is class  2.0
-Its nearest neighbor is training instance 384 which is in class 1.0
-The min distance is  0.5380084528327227
+Its nearest neighbor is training instance 779 which is in class 2.0
+The min distance is  0.8650589306485021
 
 Test Instance  15 is class  2.0
-Its nearest neighbor is training instance 139 which is in class 2.0
-The min distance is  0.2284752022692618
+Its nearest neighbor is training instance 337 which is in class 2.0
+The min distance is  0.27191745315630256
 
 Test Instance  16 is class  2.0
 Its nearest neighbor is training instance 674 which is in class 2.0
-The min distance is  0.48605979677692973
+The min distance is  0.5082977953627875
 
 Test Instance  17 is class  2.0
-Its nearest neighbor is training instance 462 which is in class 2.0
-The min distance is  0.133262917225273
+Its nearest neighbor is training instance 641 which is in class 2.0
+The min distance is  0.44754475639867575
 
 Test Instance  18 is class  2.0
-Its nearest neighbor is training instance 788 which is in class 2.0
-The min distance is  0.0771719192757312
+Its nearest neighbor is training instance 433 which is in class 1.0
+The min distance is  0.11368114612071788
 
 Test Instance  19 is class  2.0
 Its nearest neighbor is training instance 758 which is in class 2.0
-The min distance is  0.2076419901723635
+The min distance is  0.2116408776232746
 
 Test Instance  20 is class  2.0
 Its nearest neighbor is training instance 659 which is in class 2.0
-The min distance is  0.6870903188242807
+The min distance is  0.6987543088312312
 
 Test Instance  21 is class  2.0
-Its nearest neighbor is training instance 637 which is in class 1.0
-The min distance is  0.23455177827409443
+Its nearest neighbor is training instance 311 which is in class 2.0
+The min distance is  0.27788616376744985
 
 Test Instance  22 is class  2.0
-Its nearest neighbor is training instance 133 which is in class 2.0
-The min distance is  0.1574774783547474
+Its nearest neighbor is training instance 367 which is in class 2.0
+The min distance is  0.2884024170232628
 
 Test Instance  23 is class  2.0
-Its nearest neighbor is training instance 426 which is in class 2.0
-The min distance is  0.19161393791073744
+Its nearest neighbor is training instance 557 which is in class 2.0
+The min distance is  0.5772507693090673
 
 Test Instance  24 is class  1.0
-Its nearest neighbor is training instance 0 which is in class 2.0
-The min distance is  0.14709268465158284
+Its nearest neighbor is training instance 349 which is in class 2.0
+The min distance is  0.5698631850750934
 
 Test Instance  25 is class  2.0
-Its nearest neighbor is training instance 251 which is in class 1.0
-The min distance is  0.17428860670938875
+Its nearest neighbor is training instance 447 which is in class 2.0
+The min distance is  0.42110642774624085
 
 Test Instance  26 is class  2.0
-Its nearest neighbor is training instance 59 which is in class 2.0
-The min distance is  0.24707180725841615
+Its nearest neighbor is training instance 402 which is in class 2.0
+The min distance is  0.3290641681632779
 
 Test Instance  27 is class  2.0
-Its nearest neighbor is training instance 738 which is in class 2.0
-The min distance is  0.2487454522557145
+Its nearest neighbor is training instance 48 which is in class 2.0
+The min distance is  0.38071783710120577
 
 Test Instance  28 is class  2.0
-Its nearest neighbor is training instance 128 which is in class 2.0
-The min distance is  0.30588472792829996
+Its nearest neighbor is training instance 397 which is in class 2.0
+The min distance is  0.5258660462573521
 
 Test Instance  29 is class  2.0
-Its nearest neighbor is training instance 600 which is in class 2.0
-The min distance is  0.10178651701640053
+Its nearest neighbor is training instance 772 which is in class 2.0
+The min distance is  0.4637905835170978
 
 Test Instance  30 is class  2.0
-Its nearest neighbor is training instance 142 which is in class 2.0
-The min distance is  0.2306714836009425
+Its nearest neighbor is training instance 551 which is in class 2.0
+The min distance is  0.4868863558761324
 
 Test Instance  31 is class  2.0
-Its nearest neighbor is training instance 456 which is in class 2.0
-The min distance is  0.13420133876023735
+Its nearest neighbor is training instance 71 which is in class 2.0
+The min distance is  0.17141913431615485
 
 Test Instance  32 is class  2.0
-Its nearest neighbor is training instance 522 which is in class 1.0
-The min distance is  0.20709278610924592
+Its nearest neighbor is training instance 364 which is in class 2.0
+The min distance is  0.4389304470405077
 
 Test Instance  33 is class  2.0
 Its nearest neighbor is training instance 489 which is in class 1.0
-The min distance is  0.420496005952533
+The min distance is  0.4260979768131769
 
 Test Instance  34 is class  2.0
-Its nearest neighbor is training instance 402 which is in class 2.0
-The min distance is  0.05177007995551159
+Its nearest neighbor is training instance 59 which is in class 2.0
+The min distance is  0.15785831113739265
 
 Test Instance  35 is class  2.0
-Its nearest neighbor is training instance 725 which is in class 2.0
-The min distance is  0.2582088147772842
+Its nearest neighbor is training instance 709 which is in class 2.0
+The min distance is  0.4068092392603688
 
 Test Instance  36 is class  2.0
-Its nearest neighbor is training instance 4 which is in class 2.0
-The min distance is  0.25916066082420763
+Its nearest neighbor is training instance 629 which is in class 1.0
+The min distance is  0.5030547608652459
 
 Test Instance  37 is class  2.0
-Its nearest neighbor is training instance 350 which is in class 2.0
-The min distance is  0.3969047421283097
+Its nearest neighbor is training instance 226 which is in class 2.0
+The min distance is  0.6518936401798456
 
 Test Instance  38 is class  1.0
-Its nearest neighbor is training instance 698 which is in class 2.0
-The min distance is  0.430545485256018
+Its nearest neighbor is training instance 162 which is in class 2.0
+The min distance is  0.5034667887183918
 
 Test Instance  39 is class  2.0
 Its nearest neighbor is training instance 592 which is in class 2.0
-The min distance is  0.39897053745340677
+The min distance is  0.4282437856082798
 
 Test Instance  40 is class  2.0
-Its nearest neighbor is training instance 443 which is in class 2.0
-The min distance is  0.10416126045075517
+Its nearest neighbor is training instance 599 which is in class 2.0
+The min distance is  0.3631373806411972
 
 Test Instance  41 is class  2.0
 Its nearest neighbor is training instance 740 which is in class 2.0
-The min distance is  0.7264844515860336
+The min distance is  0.8938372420130078
 
 Test Instance  42 is class  1.0
-Its nearest neighbor is training instance 384 which is in class 1.0
-The min distance is  0.3561560449867587
+Its nearest neighbor is training instance 132 which is in class 2.0
+The min distance is  0.7328113316758487
 
 Test Instance  43 is class  2.0
 Its nearest neighbor is training instance 671 which is in class 1.0
-The min distance is  0.13766575106677764
+The min distance is  0.1466513058142681
 
 Test Instance  44 is class  1.0
 Its nearest neighbor is training instance 648 which is in class 2.0
-The min distance is  0.3264844714843726
+The min distance is  0.4892633639357536
 
 Test Instance  45 is class  2.0
-Its nearest neighbor is training instance 174 which is in class 2.0
-The min distance is  0.14442910819118177
+Its nearest neighbor is training instance 127 which is in class 2.0
+The min distance is  0.37557406459378984
 
 Test Instance  46 is class  1.0
 Its nearest neighbor is training instance 745 which is in class 2.0
-The min distance is  0.16688975065599448
+The min distance is  0.4127814978484743
 
 Test Instance  47 is class  2.0
-Its nearest neighbor is training instance 339 which is in class 2.0
-The min distance is  0.440345367885731
+Its nearest neighbor is training instance 434 which is in class 2.0
+The min distance is  0.5550228998660774
 
 Test Instance  48 is class  2.0
-Its nearest neighbor is training instance 209 which is in class 2.0
-The min distance is  0.2756561615373217
+Its nearest neighbor is training instance 300 which is in class 2.0
+The min distance is  0.4005095440346586
 
 Test Instance  49 is class  2.0
-Its nearest neighbor is training instance 513 which is in class 2.0
-The min distance is  0.16633904204272068
+Its nearest neighbor is training instance 774 which is in class 2.0
+The min distance is  0.4219126604425491
 
 Test Instance  50 is class  2.0
-Its nearest neighbor is training instance 234 which is in class 2.0
-The min distance is  0.07719626242098757
+Its nearest neighbor is training instance 256 which is in class 1.0
+The min distance is  0.3049491705178256
 
 Test Instance  51 is class  2.0
-Its nearest neighbor is training instance 500 which is in class 2.0
-The min distance is  0.13671649069446581
+Its nearest neighbor is training instance 430 which is in class 2.0
+The min distance is  0.40565690149497036
 
 Test Instance  52 is class  1.0
-Its nearest neighbor is training instance 483 which is in class 1.0
-The min distance is  0.17343799112334063
+Its nearest neighbor is training instance 289 which is in class 2.0
+The min distance is  0.4417715463432544
 
 Test Instance  53 is class  1.0
-Its nearest neighbor is training instance 437 which is in class 2.0
-The min distance is  0.3358607647678747
+Its nearest neighbor is training instance 110 which is in class 1.0
+The min distance is  0.5664951696071998
 
 Test Instance  54 is class  1.0
 Its nearest neighbor is training instance 395 which is in class 2.0
-The min distance is  0.5317566110093699
+The min distance is  0.5951471781834557
 
 Test Instance  55 is class  2.0
 Its nearest neighbor is training instance 675 which is in class 2.0
-The min distance is  0.3784816988284771
+The min distance is  0.4232192179241628
 
 Test Instance  56 is class  1.0
-Its nearest neighbor is training instance 319 which is in class 2.0
-The min distance is  0.37803107798075297
+Its nearest neighbor is training instance 306 which is in class 1.0
+The min distance is  0.6077031048445041
 
 Test Instance  57 is class  2.0
-Its nearest neighbor is training instance 79 which is in class 2.0
-The min distance is  0.24025098560913327
+Its nearest neighbor is training instance 580 which is in class 2.0
+The min distance is  0.4393194394531728
 
 Test Instance  58 is class  2.0
-Its nearest neighbor is training instance 469 which is in class 2.0
-The min distance is  0.20106953627809945
+Its nearest neighbor is training instance 459 which is in class 2.0
+The min distance is  0.3846264053312254
 
 Test Instance  59 is class  2.0
 Its nearest neighbor is training instance 715 which is in class 2.0
-The min distance is  0.9518533310966344
+The min distance is  1.0438708781244208
 
 Test Instance  60 is class  2.0
-Its nearest neighbor is training instance 674 which is in class 2.0
-The min distance is  0.4095928137052458
+Its nearest neighbor is training instance 565 which is in class 2.0
+The min distance is  0.5544084100547805
 
 Test Instance  61 is class  2.0
-Its nearest neighbor is training instance 349 which is in class 2.0
-The min distance is  0.26209697185707803
+Its nearest neighbor is training instance 188 which is in class 1.0
+The min distance is  0.5011108474733609
 
 Test Instance  62 is class  2.0
-Its nearest neighbor is training instance 165 which is in class 2.0
-The min distance is  0.33865184644657403
+Its nearest neighbor is training instance 437 which is in class 2.0
+The min distance is  1.0135564658372636
 
 Test Instance  63 is class  2.0
-Its nearest neighbor is training instance 197 which is in class 2.0
-The min distance is  0.5764668529509132
+Its nearest neighbor is training instance 451 which is in class 2.0
+The min distance is  1.5247468834094333
 
 Test Instance  64 is class  2.0
 Its nearest neighbor is training instance 412 which is in class 2.0
-The min distance is  0.7466896446833466
+The min distance is  0.7545377129653841
 
 Test Instance  65 is class  1.0
-Its nearest neighbor is training instance 381 which is in class 2.0
-The min distance is  0.47700345506075914
+Its nearest neighbor is training instance 343 which is in class 2.0
+The min distance is  0.6715801994956392
 
 Test Instance  66 is class  2.0
-Its nearest neighbor is training instance 533 which is in class 2.0
-The min distance is  0.23494860266615758
+Its nearest neighbor is training instance 643 which is in class 2.0
+The min distance is  0.4793525307551214
 
 Test Instance  67 is class  2.0
 Its nearest neighbor is training instance 255 which is in class 2.0
-The min distance is  0.18952116003072048
+The min distance is  0.23420680645062383
 
 Test Instance  68 is class  2.0
 Its nearest neighbor is training instance 35 which is in class 2.0
-The min distance is  0.26936394348555653
+The min distance is  0.3572122187167316
 
 Test Instance  69 is class  2.0
-Its nearest neighbor is training instance 312 which is in class 1.0
-The min distance is  0.24152042705628451
+Its nearest neighbor is training instance 593 which is in class 2.0
+The min distance is  0.5389184423534792
 
 Test Instance  70 is class  2.0
-Its nearest neighbor is training instance 55 which is in class 2.0
-The min distance is  0.18502360465056894
+Its nearest neighbor is training instance 709 which is in class 2.0
+The min distance is  0.3862321682972822
 
 Test Instance  71 is class  2.0
-Its nearest neighbor is training instance 337 which is in class 2.0
-The min distance is  0.21346492772863165
+Its nearest neighbor is training instance 574 which is in class 1.0
+The min distance is  0.50447546178282
 
 Test Instance  72 is class  2.0
-Its nearest neighbor is training instance 289 which is in class 2.0
-The min distance is  0.16792253813047228
+Its nearest neighbor is training instance 335 which is in class 2.0
+The min distance is  0.4649053077559557
 
 Test Instance  73 is class  2.0
 Its nearest neighbor is training instance 639 which is in class 2.0
-The min distance is  0.19320550126893393
+The min distance is  0.5704269002748908
 
 Test Instance  74 is class  2.0
-Its nearest neighbor is training instance 213 which is in class 2.0
-The min distance is  0.123898228143626
+Its nearest neighbor is training instance 509 which is in class 2.0
+The min distance is  0.45530660267540585
 
 Test Instance  75 is class  2.0
-Its nearest neighbor is training instance 10 which is in class 2.0
-The min distance is  0.18014223407779728
+Its nearest neighbor is training instance 600 which is in class 2.0
+The min distance is  0.21048836130907575
 
 Test Instance  76 is class  2.0
-Its nearest neighbor is training instance 308 which is in class 2.0
-The min distance is  0.1566246447290784
+Its nearest neighbor is training instance 492 which is in class 2.0
+The min distance is  0.37734345174903994
 
 Test Instance  77 is class  2.0
-Its nearest neighbor is training instance 321 which is in class 2.0
-The min distance is  0.19747049153850804
+Its nearest neighbor is training instance 471 which is in class 2.0
+The min distance is  0.4482836944695289
 
 Test Instance  78 is class  2.0
-Its nearest neighbor is training instance 247 which is in class 1.0
-The min distance is  0.1530161968782716
+Its nearest neighbor is training instance 226 which is in class 2.0
+The min distance is  0.5958597937521293
 
 Test Instance  79 is class  2.0
 Its nearest neighbor is training instance 144 which is in class 2.0
-The min distance is  0.21218727247997188
+The min distance is  0.6077492540723763
 
 Test Instance  80 is class  2.0
-Its nearest neighbor is training instance 719 which is in class 2.0
-The min distance is  0.2991234041428386
+Its nearest neighbor is training instance 250 which is in class 1.0
+The min distance is  0.7481497635759498
 
 Test Instance  81 is class  1.0
-Its nearest neighbor is training instance 212 which is in class 2.0
-The min distance is  0.22938101898818902
+Its nearest neighbor is training instance 10 which is in class 2.0
+The min distance is  0.3078985840681147
 
 Test Instance  82 is class  1.0
-Its nearest neighbor is training instance 292 which is in class 2.0
-The min distance is  0.20821364425253225
+Its nearest neighbor is training instance 749 which is in class 1.0
+The min distance is  0.8093011509173831
 
 Test Instance  83 is class  2.0
-Its nearest neighbor is training instance 569 which is in class 2.0
-The min distance is  0.21531634137308253
+Its nearest neighbor is training instance 149 which is in class 2.0
+The min distance is  0.2898790332206521
 
 Test Instance  84 is class  2.0
 Its nearest neighbor is training instance 324 which is in class 2.0
-The min distance is  0.15304696523129754
+The min distance is  0.16606148135952548
 
 Test Instance  85 is class  2.0
-Its nearest neighbor is training instance 202 which is in class 2.0
-The min distance is  0.2764123303864899
+Its nearest neighbor is training instance 507 which is in class 2.0
+The min distance is  0.6166445555052843
 
 Test Instance  86 is class  2.0
-Its nearest neighbor is training instance 213 which is in class 2.0
-The min distance is  0.1375722785516761
+Its nearest neighbor is training instance 621 which is in class 2.0
+The min distance is  0.460470227092556
 
 Test Instance  87 is class  2.0
-Its nearest neighbor is training instance 714 which is in class 2.0
-The min distance is  0.26532217548135684
+Its nearest neighbor is training instance 282 which is in class 2.0
+The min distance is  0.5376329967132503
 
 Test Instance  88 is class  2.0
-Its nearest neighbor is training instance 445 which is in class 2.0
-The min distance is  0.44629654099090904
+Its nearest neighbor is training instance 214 which is in class 2.0
+The min distance is  0.7321727092890652
 
 Test Instance  89 is class  1.0
-Its nearest neighbor is training instance 730 which is in class 2.0
-The min distance is  0.17729487893035697
+Its nearest neighbor is training instance 580 which is in class 2.0
+The min distance is  0.6409763586893125
 
 Test Instance  90 is class  2.0
-Its nearest neighbor is training instance 762 which is in class 2.0
-The min distance is  0.16009707722897384
+Its nearest neighbor is training instance 694 which is in class 2.0
+The min distance is  0.5403448353555164
 
 Test Instance  91 is class  2.0
-Its nearest neighbor is training instance 288 which is in class 2.0
-The min distance is  0.2361988939429014
+Its nearest neighbor is training instance 348 which is in class 2.0
+The min distance is  0.25558006324089527
 
 Test Instance  92 is class  2.0
-Its nearest neighbor is training instance 326 which is in class 2.0
-The min distance is  0.19423111195413564
+Its nearest neighbor is training instance 59 which is in class 2.0
+The min distance is  0.7576658129486373
 
 Test Instance  93 is class  1.0
 Its nearest neighbor is training instance 500 which is in class 2.0
-The min distance is  0.09668125484968655
+The min distance is  0.27163115233661994
 
 Test Instance  94 is class  2.0
-Its nearest neighbor is training instance 314 which is in class 2.0
-The min distance is  0.1772493890448708
+Its nearest neighbor is training instance 116 which is in class 2.0
+The min distance is  0.3501388593493588
 
 Test Instance  95 is class  1.0
 Its nearest neighbor is training instance 360 which is in class 1.0
-The min distance is  0.18692966107226017
+The min distance is  0.256689068675606
 
 Test Instance  96 is class  2.0
-Its nearest neighbor is training instance 27 which is in class 2.0
-The min distance is  0.1948577164520052
+Its nearest neighbor is training instance 720 which is in class 2.0
+The min distance is  0.5177742860712475
 
 Test Instance  97 is class  2.0
-Its nearest neighbor is training instance 249 which is in class 2.0
-The min distance is  0.44751058376639535
+Its nearest neighbor is training instance 154 which is in class 2.0
+The min distance is  0.6748134742624957
 
 Test Instance  98 is class  2.0
-Its nearest neighbor is training instance 577 which is in class 1.0
-The min distance is  0.2716466161676603
+Its nearest neighbor is training instance 15 which is in class 1.0
+The min distance is  0.5886460551282919
 
 Test Instance  99 is class  2.0
-Its nearest neighbor is training instance 708 which is in class 1.0
-The min distance is  0.24449512134995655
+Its nearest neighbor is training instance 694 which is in class 2.0
+The min distance is  0.34608496965222285
 
 Test Instance  100 is class  2.0
-Its nearest neighbor is training instance 586 which is in class 2.0
-The min distance is  0.23402187227748608
+Its nearest neighbor is training instance 391 which is in class 1.0
+The min distance is  0.3514895214092874
 
 Test Instance  101 is class  1.0
-Its nearest neighbor is training instance 687 which is in class 2.0
-The min distance is  0.13719045425342064
+Its nearest neighbor is training instance 48 which is in class 2.0
+The min distance is  0.45727583755580176
 
 Test Instance  102 is class  1.0
-Its nearest neighbor is training instance 417 which is in class 2.0
-The min distance is  0.2126764228487256
+Its nearest neighbor is training instance 730 which is in class 2.0
+The min distance is  0.22720754298524054
 
 Test Instance  103 is class  2.0
-Its nearest neighbor is training instance 85 which is in class 2.0
-The min distance is  0.14587663547621313
+Its nearest neighbor is training instance 418 which is in class 2.0
+The min distance is  0.31469386829871665
 
 Test Instance  104 is class  2.0
-Its nearest neighbor is training instance 476 which is in class 2.0
-The min distance is  0.40006108822613556
+Its nearest neighbor is training instance 499 which is in class 2.0
+The min distance is  0.551087007951485
 
 Test Instance  105 is class  2.0
-Its nearest neighbor is training instance 29 which is in class 2.0
-The min distance is  0.19078278830455336
+Its nearest neighbor is training instance 267 which is in class 2.0
+The min distance is  0.4643722969265823
 
 Test Instance  106 is class  2.0
 Its nearest neighbor is training instance 95 which is in class 2.0
-The min distance is  0.18426809148732182
+The min distance is  0.5370643838243512
 
 Test Instance  107 is class  2.0
-Its nearest neighbor is training instance 597 which is in class 2.0
-The min distance is  0.14687979475863935
+Its nearest neighbor is training instance 542 which is in class 2.0
+The min distance is  0.3424378974120271
 
 Test Instance  108 is class  2.0
-Its nearest neighbor is training instance 561 which is in class 2.0
-The min distance is  0.3515562599285357
+Its nearest neighbor is training instance 362 which is in class 2.0
+The min distance is  1.0476039635617027
 
 Test Instance  109 is class  2.0
-Its nearest neighbor is training instance 695 which is in class 1.0
-The min distance is  0.23788682804604797
+Its nearest neighbor is training instance 629 which is in class 1.0
+The min distance is  0.4666432048723736
 
 Test Instance  110 is class  2.0
-Its nearest neighbor is training instance 756 which is in class 2.0
-The min distance is  0.5245678251513427
+Its nearest neighbor is training instance 777 which is in class 2.0
+The min distance is  0.7891005780234733
 
 Test Instance  111 is class  2.0
-Its nearest neighbor is training instance 14 which is in class 2.0
-The min distance is  0.2486915720095878
+Its nearest neighbor is training instance 457 which is in class 2.0
+The min distance is  0.3973863669226463
 
 Test Instance  112 is class  1.0
 Its nearest neighbor is training instance 492 which is in class 2.0
-The min distance is  0.2532548981351792
+The min distance is  0.2693324785573957
 
 Test Instance  113 is class  2.0
-Its nearest neighbor is training instance 13 which is in class 1.0
-The min distance is  0.19577623909833927
+Its nearest neighbor is training instance 372 which is in class 2.0
+The min distance is  0.32835947288528183
 
 Test Instance  114 is class  2.0
-Its nearest neighbor is training instance 206 which is in class 2.0
-The min distance is  0.2711527961989145
+Its nearest neighbor is training instance 131 which is in class 1.0
+The min distance is  0.5211815201537654
 
 Test Instance  115 is class  2.0
 Its nearest neighbor is training instance 405 which is in class 2.0
-The min distance is  0.6494246179842126
+The min distance is  1.1283451918401348
 
 Test Instance  116 is class  2.0
-Its nearest neighbor is training instance 442 which is in class 1.0
-The min distance is  0.2792619060392232
+Its nearest neighbor is training instance 122 which is in class 2.0
+The min distance is  0.629680690009381
 
 Test Instance  117 is class  2.0
-Its nearest neighbor is training instance 629 which is in class 1.0
-The min distance is  0.24331570840556088
+Its nearest neighbor is training instance 509 which is in class 2.0
+The min distance is  0.4499505468560301
 
 Test Instance  118 is class  1.0
-Its nearest neighbor is training instance 61 which is in class 1.0
-The min distance is  0.24024100471072793
+Its nearest neighbor is training instance 607 which is in class 2.0
+The min distance is  0.4792742632008319
 
 Test Instance  119 is class  1.0
 Its nearest neighbor is training instance 93 which is in class 1.0
-The min distance is  0.12604344446158255
+The min distance is  0.1373436755201346
 
 Test Instance  120 is class  2.0
-Its nearest neighbor is training instance 772 which is in class 2.0
-The min distance is  0.17014140051630575
+Its nearest neighbor is training instance 579 which is in class 2.0
+The min distance is  0.42424051083994807
 
 Test Instance  121 is class  2.0
-Its nearest neighbor is training instance 199 which is in class 2.0
-The min distance is  0.22758821247303176
+Its nearest neighbor is training instance 283 which is in class 2.0
+The min distance is  0.3284513613312328
 
 Test Instance  122 is class  2.0
-Its nearest neighbor is training instance 541 which is in class 2.0
-The min distance is  0.2657830771881648
+Its nearest neighbor is training instance 51 which is in class 2.0
+The min distance is  0.2708577129554555
 
 Test Instance  123 is class  1.0
-Its nearest neighbor is training instance 278 which is in class 1.0
-The min distance is  0.4128865616813414
+Its nearest neighbor is training instance 197 which is in class 2.0
+The min distance is  0.44666314161734894
 
 Test Instance  124 is class  2.0
-Its nearest neighbor is training instance 128 which is in class 2.0
-The min distance is  0.22573427570010257
+Its nearest neighbor is training instance 15 which is in class 1.0
+The min distance is  0.5099617794601377
 
 Test Instance  125 is class  2.0
 Its nearest neighbor is training instance 468 which is in class 1.0
-The min distance is  0.2605258405214154
+The min distance is  0.31410881383710004
 
 Test Instance  126 is class  1.0
 Its nearest neighbor is training instance 382 which is in class 2.0
-The min distance is  0.36000758227516544
+The min distance is  0.4030315644300084
 
 Test Instance  127 is class  2.0
-Its nearest neighbor is training instance 403 which is in class 2.0
-The min distance is  0.20257331994134867
+Its nearest neighbor is training instance 50 which is in class 2.0
+The min distance is  0.3435447890753254
 
 Test Instance  128 is class  2.0
-Its nearest neighbor is training instance 410 which is in class 2.0
-The min distance is  0.2157514776292853
+Its nearest neighbor is training instance 318 which is in class 2.0
+The min distance is  0.5532529316938772
 
 Test Instance  129 is class  2.0
 Its nearest neighbor is training instance 205 which is in class 2.0
-The min distance is  0.23751329029801685
+The min distance is  0.244678021210488
 
 Test Instance  130 is class  2.0
-Its nearest neighbor is training instance 716 which is in class 2.0
-The min distance is  0.2395721157895258
+Its nearest neighbor is training instance 558 which is in class 2.0
+The min distance is  0.6061250011626811
 
 Test Instance  131 is class  2.0
-Its nearest neighbor is training instance 89 which is in class 2.0
-The min distance is  0.05676232520792284
+Its nearest neighbor is training instance 195 which is in class 2.0
+The min distance is  0.6377475371308148
 
 Test Instance  132 is class  2.0
-Its nearest neighbor is training instance 354 which is in class 2.0
-The min distance is  0.24822973007897325
+Its nearest neighbor is training instance 33 which is in class 1.0
+The min distance is  0.2721230746573506
 
 Test Instance  133 is class  2.0
 Its nearest neighbor is training instance 434 which is in class 2.0
-The min distance is  0.38145405273569943
+The min distance is  0.39626915309310895
 
 Test Instance  134 is class  1.0
-Its nearest neighbor is training instance 643 which is in class 2.0
-The min distance is  0.1907345307353128
+Its nearest neighbor is training instance 629 which is in class 1.0
+The min distance is  0.49773948929952305
 
 Test Instance  135 is class  2.0
-Its nearest neighbor is training instance 797 which is in class 2.0
-The min distance is  0.15003568706244513
+Its nearest neighbor is training instance 492 which is in class 2.0
+The min distance is  0.4841726045959438
 
 Test Instance  136 is class  2.0
-Its nearest neighbor is training instance 112 which is in class 2.0
-The min distance is  0.24434815923444655
+Its nearest neighbor is training instance 32 which is in class 1.0
+The min distance is  0.5068395579310676
 
 Test Instance  137 is class  2.0
-Its nearest neighbor is training instance 436 which is in class 2.0
-The min distance is  0.2000505563135479
+Its nearest neighbor is training instance 235 which is in class 1.0
+The min distance is  0.371966973040349
 
 Test Instance  138 is class  2.0
-Its nearest neighbor is training instance 625 which is in class 2.0
-The min distance is  0.19443485544752512
+Its nearest neighbor is training instance 550 which is in class 2.0
+The min distance is  0.5090446524929516
 
 Test Instance  139 is class  2.0
-Its nearest neighbor is training instance 344 which is in class 2.0
-The min distance is  0.16208786155767496
+Its nearest neighbor is training instance 783 which is in class 2.0
+The min distance is  0.47508441422626146
 
 Test Instance  140 is class  2.0
-Its nearest neighbor is training instance 149 which is in class 2.0
-The min distance is  0.1925199512059201
+Its nearest neighbor is training instance 569 which is in class 2.0
+The min distance is  0.3657125038550092
 
 Test Instance  141 is class  1.0
-Its nearest neighbor is training instance 353 which is in class 1.0
-The min distance is  0.23720271907522447
+Its nearest neighbor is training instance 764 which is in class 2.0
+The min distance is  0.816312449579314
 
 Test Instance  142 is class  2.0
 Its nearest neighbor is training instance 625 which is in class 2.0
-The min distance is  0.29354499667125983
+The min distance is  0.34223842266871507
 
 Test Instance  143 is class  2.0
-Its nearest neighbor is training instance 589 which is in class 2.0
-The min distance is  0.07278700505097034
+Its nearest neighbor is training instance 456 which is in class 2.0
+The min distance is  0.30432781260864106
 
 Test Instance  144 is class  2.0
-Its nearest neighbor is training instance 601 which is in class 2.0
-The min distance is  0.21246709071616265
+Its nearest neighbor is training instance 643 which is in class 2.0
+The min distance is  0.6820521271612527
 
 Test Instance  145 is class  2.0
-Its nearest neighbor is training instance 340 which is in class 1.0
-The min distance is  0.27886915645269905
+Its nearest neighbor is training instance 485 which is in class 2.0
+The min distance is  0.39290632175441037
 
 Test Instance  146 is class  2.0
-Its nearest neighbor is training instance 366 which is in class 2.0
-The min distance is  0.2951622433324087
+Its nearest neighbor is training instance 289 which is in class 2.0
+The min distance is  0.33743107649717147
 
 Test Instance  147 is class  2.0
-Its nearest neighbor is training instance 426 which is in class 2.0
-The min distance is  0.4076937284023267
+Its nearest neighbor is training instance 359 which is in class 2.0
+The min distance is  0.5098960360030272
 
 Test Instance  148 is class  1.0
-Its nearest neighbor is training instance 334 which is in class 1.0
-The min distance is  0.21762985819877742
+Its nearest neighbor is training instance 798 which is in class 1.0
+The min distance is  0.2761095511737144
 
 Test Instance  149 is class  2.0
-Its nearest neighbor is training instance 196 which is in class 2.0
-The min distance is  0.6528137214028906
+Its nearest neighbor is training instance 186 which is in class 2.0
+The min distance is  0.9797291790585453
 
 Test Instance  150 is class  2.0
-Its nearest neighbor is training instance 757 which is in class 2.0
-The min distance is  0.3085538911599885
+Its nearest neighbor is training instance 696 which is in class 1.0
+The min distance is  0.5721934591125802
 
 Test Instance  151 is class  2.0
-Its nearest neighbor is training instance 646 which is in class 2.0
-The min distance is  0.23384560709267138
+Its nearest neighbor is training instance 113 which is in class 1.0
+The min distance is  0.7421028138070428
 
 Test Instance  152 is class  2.0
-Its nearest neighbor is training instance 698 which is in class 2.0
-The min distance is  0.20607049725965126
+Its nearest neighbor is training instance 236 which is in class 1.0
+The min distance is  0.24547032003403177
 
 Test Instance  153 is class  2.0
 Its nearest neighbor is training instance 442 which is in class 1.0
-The min distance is  0.18067416153476412
+The min distance is  0.41561098244428074
 
 Test Instance  154 is class  1.0
-Its nearest neighbor is training instance 545 which is in class 2.0
-The min distance is  0.1925540758902547
+Its nearest neighbor is training instance 667 which is in class 2.0
+The min distance is  0.5952458146657227
 
 Test Instance  155 is class  2.0
-Its nearest neighbor is training instance 537 which is in class 2.0
-The min distance is  0.2602581773538342
+Its nearest neighbor is training instance 19 which is in class 2.0
+The min distance is  0.4587720089614119
 
 Test Instance  156 is class  2.0
-Its nearest neighbor is training instance 640 which is in class 2.0
-The min distance is  0.14846960106250703
+Its nearest neighbor is training instance 538 which is in class 2.0
+The min distance is  0.24108531075596443
 
 Test Instance  157 is class  2.0
-Its nearest neighbor is training instance 205 which is in class 2.0
-The min distance is  0.22938434854359607
+Its nearest neighbor is training instance 168 which is in class 2.0
+The min distance is  0.388522662128543
 
 Test Instance  158 is class  1.0
-Its nearest neighbor is training instance 436 which is in class 2.0
-The min distance is  0.19581324119989948
+Its nearest neighbor is training instance 308 which is in class 2.0
+The min distance is  0.419098059764502
 
 Test Instance  159 is class  2.0
-Its nearest neighbor is training instance 190 which is in class 2.0
-The min distance is  0.245432281414772
+Its nearest neighbor is training instance 366 which is in class 2.0
+The min distance is  0.384614503814963
 
 Test Instance  160 is class  2.0
 Its nearest neighbor is training instance 385 which is in class 2.0
-The min distance is  0.18966943230560376
+The min distance is  0.19764819341317036
 
 Test Instance  161 is class  2.0
-Its nearest neighbor is training instance 788 which is in class 2.0
-The min distance is  0.30908866068927565
+Its nearest neighbor is training instance 259 which is in class 1.0
+The min distance is  0.7372794710882502
 
 Test Instance  162 is class  2.0
-Its nearest neighbor is training instance 670 which is in class 2.0
-The min distance is  0.18533563241249662
+Its nearest neighbor is training instance 342 which is in class 2.0
+The min distance is  0.40343430879747955
 
 Test Instance  163 is class  2.0
-Its nearest neighbor is training instance 763 which is in class 2.0
-The min distance is  0.2296533925470512
+Its nearest neighbor is training instance 659 which is in class 2.0
+The min distance is  0.3353774613474047
 
 Test Instance  164 is class  2.0
-Its nearest neighbor is training instance 578 which is in class 1.0
-The min distance is  0.4742700722869407
+Its nearest neighbor is training instance 550 which is in class 2.0
+The min distance is  1.1237301505105886
 
 Test Instance  165 is class  2.0
-Its nearest neighbor is training instance 774 which is in class 2.0
-The min distance is  0.07045386299742566
+Its nearest neighbor is training instance 96 which is in class 2.0
+The min distance is  0.4323800433640526
 
 Test Instance  166 is class  2.0
 Its nearest neighbor is training instance 174 which is in class 2.0
-The min distance is  0.2025593963405797
+The min distance is  0.22969304692963616
 
 Test Instance  167 is class  2.0
 Its nearest neighbor is training instance 51 which is in class 2.0
-The min distance is  0.20528253542534983
+The min distance is  0.34000760725470563
 
 Test Instance  168 is class  1.0
-Its nearest neighbor is training instance 194 which is in class 2.0
-The min distance is  0.9062077810900722
+Its nearest neighbor is training instance 681 which is in class 1.0
+The min distance is  1.1634095197674
 
 Test Instance  169 is class  2.0
-Its nearest neighbor is training instance 745 which is in class 2.0
-The min distance is  0.14025376949248117
+Its nearest neighbor is training instance 398 which is in class 2.0
+The min distance is  0.6253978194339186
 
 Test Instance  170 is class  2.0
-Its nearest neighbor is training instance 675 which is in class 2.0
-The min distance is  0.3393440018436307
+Its nearest neighbor is training instance 237 which is in class 2.0
+The min distance is  0.6582322625122157
 
 Test Instance  171 is class  1.0
-Its nearest neighbor is training instance 118 which is in class 2.0
-The min distance is  0.1588828581954326
+Its nearest neighbor is training instance 652 which is in class 1.0
+The min distance is  0.61529444310132
 
 Test Instance  172 is class  1.0
-Its nearest neighbor is training instance 784 which is in class 2.0
-The min distance is  0.3502663156371444
+Its nearest neighbor is training instance 496 which is in class 2.0
+The min distance is  0.42857104499901755
 
 Test Instance  173 is class  2.0
-Its nearest neighbor is training instance 195 which is in class 2.0
-The min distance is  0.1169705500599617
+Its nearest neighbor is training instance 293 which is in class 2.0
+The min distance is  0.39402425435260957
 
 Test Instance  174 is class  2.0
-Its nearest neighbor is training instance 35 which is in class 2.0
-The min distance is  0.29248578133100767
+Its nearest neighbor is training instance 731 which is in class 2.0
+The min distance is  0.4083510260636307
 
 Test Instance  175 is class  2.0
-Its nearest neighbor is training instance 399 which is in class 2.0
-The min distance is  0.14469776071885126
+Its nearest neighbor is training instance 119 which is in class 2.0
+The min distance is  0.5781534502190742
 
 Test Instance  176 is class  2.0
-Its nearest neighbor is training instance 708 which is in class 1.0
-The min distance is  0.37247074623547277
+Its nearest neighbor is training instance 690 which is in class 2.0
+The min distance is  0.665381856152548
 
 Test Instance  177 is class  2.0
-Its nearest neighbor is training instance 333 which is in class 2.0
-The min distance is  0.23593574208476822
+Its nearest neighbor is training instance 116 which is in class 2.0
+The min distance is  0.42609963560374003
 
 Test Instance  178 is class  2.0
-Its nearest neighbor is training instance 660 which is in class 2.0
-The min distance is  0.3879530280877442
+Its nearest neighbor is training instance 423 which is in class 2.0
+The min distance is  0.6419568083343768
 
 Test Instance  179 is class  2.0
-Its nearest neighbor is training instance 11 which is in class 2.0
-The min distance is  0.22514749054817385
+Its nearest neighbor is training instance 161 which is in class 2.0
+The min distance is  0.42964841738685605
 
 Test Instance  180 is class  2.0
 Its nearest neighbor is training instance 0 which is in class 2.0
-The min distance is  0.18806788144037254
+The min distance is  0.19324263953338564
 
 Test Instance  181 is class  2.0
-Its nearest neighbor is training instance 107 which is in class 2.0
-The min distance is  0.6679723661831156
+Its nearest neighbor is training instance 756 which is in class 2.0
+The min distance is  0.8447109775135517
 
 Test Instance  182 is class  1.0
-Its nearest neighbor is training instance 688 which is in class 1.0
-The min distance is  0.08908966103055957
+Its nearest neighbor is training instance 644 which is in class 1.0
+The min distance is  0.2757255879960182
 
 Test Instance  183 is class  2.0
-Its nearest neighbor is training instance 625 which is in class 2.0
-The min distance is  0.7580489053686179
+Its nearest neighbor is training instance 165 which is in class 2.0
+The min distance is  1.3207285767740535
 
 Test Instance  184 is class  2.0
-Its nearest neighbor is training instance 630 which is in class 1.0
-The min distance is  0.36744141014767284
+Its nearest neighbor is training instance 62 which is in class 1.0
+The min distance is  0.5589849780279988
 
 Test Instance  185 is class  2.0
-Its nearest neighbor is training instance 561 which is in class 2.0
-The min distance is  0.26549126952293567
+Its nearest neighbor is training instance 393 which is in class 2.0
+The min distance is  1.027346283716586
 
 Test Instance  186 is class  2.0
-Its nearest neighbor is training instance 392 which is in class 2.0
-The min distance is  0.12201758445216007
+Its nearest neighbor is training instance 790 which is in class 2.0
+The min distance is  0.27869925145604535
 
 Test Instance  187 is class  2.0
 Its nearest neighbor is training instance 438 which is in class 2.0
-The min distance is  0.18325450683724015
+The min distance is  0.21670129181931547
 
 Test Instance  188 is class  2.0
-Its nearest neighbor is training instance 88 which is in class 2.0
-The min distance is  0.3677643348327977
+Its nearest neighbor is training instance 89 which is in class 2.0
+The min distance is  0.4600344875570198
 
 Test Instance  189 is class  2.0
-Its nearest neighbor is training instance 485 which is in class 2.0
-The min distance is  0.1010451924723783
+Its nearest neighbor is training instance 344 which is in class 2.0
+The min distance is  0.340394344948062
 
 Test Instance  190 is class  2.0
-Its nearest neighbor is training instance 548 which is in class 1.0
-The min distance is  0.17199885007926666
+Its nearest neighbor is training instance 314 which is in class 2.0
+The min distance is  0.4126922832445986
 
 Test Instance  191 is class  1.0
-Its nearest neighbor is training instance 737 which is in class 2.0
-The min distance is  0.2599360994519423
+Its nearest neighbor is training instance 477 which is in class 2.0
+The min distance is  0.37102501473718497
 
 Test Instance  192 is class  2.0
-Its nearest neighbor is training instance 567 which is in class 2.0
-The min distance is  0.31026175986010596
+Its nearest neighbor is training instance 681 which is in class 1.0
+The min distance is  0.5155407407490021
 
 Test Instance  193 is class  2.0
-Its nearest neighbor is training instance 747 which is in class 1.0
-The min distance is  0.6078527667575512
+Its nearest neighbor is training instance 711 which is in class 2.0
+The min distance is  1.1965149104987285
 
 Test Instance  194 is class  2.0
-Its nearest neighbor is training instance 541 which is in class 2.0
-The min distance is  0.2864823920056168
+Its nearest neighbor is training instance 140 which is in class 2.0
+The min distance is  0.5746096288867599
 
 Test Instance  195 is class  2.0
-Its nearest neighbor is training instance 762 which is in class 2.0
-The min distance is  0.18112293079149297
+Its nearest neighbor is training instance 694 which is in class 2.0
+The min distance is  0.5501570364393241
 
 Test Instance  196 is class  2.0
-Its nearest neighbor is training instance 413 which is in class 1.0
-The min distance is  0.36069256965469415
+Its nearest neighbor is training instance 21 which is in class 1.0
+The min distance is  0.5237668240168866
 
 Test Instance  197 is class  2.0
-Its nearest neighbor is training instance 11 which is in class 2.0
-The min distance is  0.24289721947494602
+Its nearest neighbor is training instance 364 which is in class 2.0
+The min distance is  0.43952720276414076
 
 Test Instance  198 is class  1.0
-Its nearest neighbor is training instance 104 which is in class 1.0
-The min distance is  0.42200897406005494
+Its nearest neighbor is training instance 448 which is in class 2.0
+The min distance is  0.5513933555915141
 
 Test Instance  199 is class  2.0
 Its nearest neighbor is training instance 571 which is in class 2.0
-The min distance is  0.32922592958757313
+The min distance is  0.3314355183812406
+
+Classification Elapsed Time: 0.43306398391723633 seconds
