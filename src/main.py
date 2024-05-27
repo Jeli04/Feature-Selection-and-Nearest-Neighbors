@@ -15,15 +15,14 @@ def main():
     problemObj = Problem(my_list)
     
     if (algo == 1):
-        problemObj.greedy_forward_search()
+        bestSet = list(problemObj.greedy_forward_search())
     elif (algo == 2):
-        problemObj.greedy_backward_search()
+        bestSet = problemObj.greedy_backward_search()
+        
+    print("Using features ", bestSet)
+    dataset= Classifier(filename="./data/small-test-dataset.txt")
+    dataset.testTheData(dataset.test, bestSet)
 
 if __name__ == '__main__':
-    #main()
-    #main()
-    dataset= Classifier(filename="../data/small-test-dataset.txt")
-    #third parameter = best feature subset from greedy algorithm
-    print("Using features ", "(2, 3, 4)")
-    #dataset.nearestNeighbor(dataset.train, dataset.test[0], [2,3,4])
-    dataset.testTheData(dataset.test, [2,3,4])
+    main()
+    

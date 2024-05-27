@@ -90,6 +90,8 @@ class Problem:
           break
         #compare accuracies of current subset and output best accuracy
         print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
+      
+      return bestFeatures
   
     def greedy_forward_search(self):
         result = [set()]
@@ -117,6 +119,6 @@ class Problem:
             else:
                 print("Warning! accuracy has decreased! So we stop searching..")
                 print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
-                return result
+                return result[-1]
         
-        return result
+        return result[-1]
