@@ -4,7 +4,7 @@ import math
 
 
 class Validator:
-    def __init__(self, filename, test_size=0.2) -> None:
+    def __init__(self, filename) -> None:
         with open(filename, 'r') as file:
             lines = file.readlines()
 
@@ -12,10 +12,7 @@ class Validator:
 
 
     def k_fold(self, classifier, feature_set, k):
-
-
         #applying min-max normalization to every feature
-
         for i in range(1, self.data.shape[1]):
             col = self.data[:, i]
         
@@ -32,16 +29,13 @@ class Validator:
 
         kfold_size = int(len(self.data) / k)
         k_folds = [self.data[j:j+kfold_size] for j in range(0, len(self.data), kfold_size)]
-        print(len(k_folds))
+
         for i in range(k):
             output = []
             testing_set = k_folds[i]
-            # print("Testing set ", testing_set)
             testing_labels = np.array(testing_set)[:, 0]
-            training_set = k_folds[:i] + k_folds[i+1:]
-            training_set = np.array(training_set).reshape(-1, 10)
-            print(training_set)
-            # print(training_set)
+            training_set = np.array(k_folds[:i] + k_folds[i+1:]).reshape(-1, len(testing_set[0]))
+
             for instance in testing_set:
                 output.append(classifier.nearestNeighbor(training_set, instance, feature_set))
             
@@ -50,46 +44,11 @@ class Validator:
             print("Accuracy: ", accuracy)
 
         
+# from searches import Problem
 
-        #this array will store whether the classifier got each instance correct with leavone-out
-        #storing 1 for correct and 0 for incorrect
-        '''knn_classifications = []
-        for instance in self.data:
-            num_class1 = 0
-            num_class2 = 0
-            for neighbor_index in range(k):
-                if(output[instance][neighbor_index] == 1):
-                    num_class1 += 1
-
-                else:
-                    num_class2 += 1
-
-            if(num_class1 > num_class2) and (instance[0] == 1):
-                knn_classifications.append(1)
-                
-            elif(num_class2 > num_class1) and (instance[0] == 2):
-                knn_classifications.append(1)
-
-            else:
-                knn_classifications.append(0)
-
-        validator_accuracy = sum(knn_classifications) / len(knn_classifications)
-
-        return validator_accuracy
-
-    def eval(self):
-        return'''
-
-
+# problemObj = Problem([1,2,5])
+# bestSet = problemObj.greedy_backward_search()
+# print("Using features ", bestSet)
 # test = Validator("data/small-test-dataset.txt")
-# test_classifier = Classifier("data/small-test-dataset.txt")
-
-# test.k_fold(test_classifier, [2], 5)
-from searches import Problem
-
-problemObj = Problem([1,2,5])
-bestSet = problemObj.greedy_backward_search()
-print("Using features ", bestSet)
-test = Validator("data/small-test-dataset.txt")
-test_classifier = Classifier("data/small-test-dataset.txt")
-test.k_fold(test_classifier, [2], 5)
+# test_classifier = Classifier()
+# test.k_fold(test_classifier, [3,5,7], 5)

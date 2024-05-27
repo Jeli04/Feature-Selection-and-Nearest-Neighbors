@@ -1,5 +1,6 @@
 from searches import Problem
 from classifiers import Classifier
+from validation import Validator
 
 import time
 
@@ -28,13 +29,17 @@ def main():
     print("\nFeature Selection Elapsed Time:", elasped_feature, "seconds")
     
     print("Using features ", bestSet)
+    
     start_time_classification = time.time()
-    dataset= Classifier(filename="./data/small-test-dataset.txt")
-    dataset.testTheData(dataset.test, bestSet)
+    
+    validator = Validator("data/small-test-dataset.txt")
+    classifier = Classifier()
+    validator.k_fold(classifier, bestSet, k=5)
     
     end_time_classification = time.time()
     elapsed_classification = end_time_classification - start_time_classification
     print("\nClassification Elapsed Time:", elapsed_classification, "seconds")
+
 
 if __name__ == '__main__':
     main()
