@@ -9,8 +9,8 @@ class Validator:
             lines = file.readlines()
 
         self.data = np.array([list(map(float, line.split())) for line in lines])
-        self.train = self.data[:int(len(self.data) * 0.8)]
-        self.test = self.data[int(len(self.data) * 0.2):]
+        #self.train = self.data[:int(len(self.data) * 0.8)]
+        #self.test = self.data[int(len(self.data) * 0.2):]
 
     def k_fold(self, sampleProblem, k):
 
@@ -80,12 +80,31 @@ class Validator:
              neighbor_distances[i] = new_distances
              neighbor_classifications[i] = new_classifications
 
-        
-        
+        #this array will store whether the classifier got each instance correct with leavone-out
+        #storing 1 for correct and 0 for incorrect
+        knn_classifications = []
+        for instance in self.data:
+            num_class1 = 0
+            num_class2 = 0
+            for neighbor_index in range(k):
+                if(neighbor_classifications[instance][neighbor_index] == 1):
+                    num_class1 += 1
 
-        
+                else:
+                    num_class2 += 1
 
-        return 
+            if(num_class1 > num_class2) and (instance[0] == 1):
+                knn_classifications.append(1)
+                
+            elif(num_class2 > num_class1) and (instance[0] == 2):
+                knn_classifications.append(1)
+
+            else:
+                knn_classifications.append(0)
+
+        validator_accuracy = sum(knn_classifications) / len(knn_classifications)
+
+        return validator_accuracy
 
     def eval(self):
         return
