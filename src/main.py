@@ -22,8 +22,8 @@ def main():
 if __name__ == '__main__':
     #main()
     #main()
-    test = Classifier(filename="../data/small-test-dataset.txt")
-    print("Test Point: ", test.data[1][2])
+    dataset= Classifier(filename="../data/small-test-dataset.txt")
     #third parameter = best feature subset from greedy algorithm
     print("Using features ", "(2, 3, 4)")
-    test.nearestNeighbor(test.train, test.test[0], [2,3,4])
+    #dataset.nearestNeighbor(dataset.train, dataset.test[0], [2,3,4])
+    dataset.testTheData(dataset.test, [2,3,4])
