@@ -1,4 +1,5 @@
 from searches import Problem
+from classifiers import Classifier
 
 def main():
     print("Welcome to the Feature Selection Algorithm.")
@@ -14,9 +15,14 @@ def main():
     problemObj = Problem(my_list)
     
     if (algo == 1):
-        problemObj.greedy_forward_search()
+        bestSet = list(problemObj.greedy_forward_search())
     elif (algo == 2):
-        problemObj.greedy_backward_search()
+        bestSet = problemObj.greedy_backward_search()
+        
+    print("Using features ", bestSet)
+    dataset= Classifier(filename="./data/small-test-dataset.txt")
+    dataset.testTheData(dataset.test, bestSet)
 
 if __name__ == '__main__':
     main()
+    
