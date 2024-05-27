@@ -16,6 +16,11 @@ class Classifier:
   def euclideanDistance(self, point1, point2):    
     return math.sqrt(sum((x - y) ** 2 for x, y in zip(point1, point2)))
 
+  def testTheData(self, test, featureSubset):
+    for i in range(len(test)): 
+        print("\nTest Instance ", i, "is class ", test[i][0])
+        self.nearestNeighbor(self.train, test[i], featureSubset)
+
   def nearestNeighbor(self, data, testInstance, featureSubset):
     minDistance = 1000
     nearestRowIndex = 0 # row index = nearest neighbor
@@ -26,7 +31,6 @@ class Classifier:
     # print("Class Instance: ", testInstance)
     
     for i in range(len(data)):
-      print("\nInstance ", i, "is class ", data[i][0])
       newPoint = data[i][featureSubset]
       
       # convert each point to tuples to pass into euclideanDistance
@@ -40,9 +44,14 @@ class Classifier:
         minDistance = distance
         nearestRowIndex = i # nearest instance
     
-      print("Its nearest neighbor is ", data[nearestRowIndex][featureSubset], "which is in class", data[nearestRowIndex][0])
-      print("The min distance is ", minDistance)
+    print("Its nearest neighbor is training instance", nearestRowIndex, "which is in class", data[nearestRowIndex][0])
+    print("The min distance is ", minDistance)
     return data[nearestRowIndex][0] # return the class label of the nearest neighbor
+
+
+        
+          
+
 
 # Using features (1,4,5)
 
