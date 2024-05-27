@@ -1,5 +1,6 @@
 from searches import Problem
 from classifiers import Classifier
+from validation import Validator
 
 def main():
     print("Welcome to the Feature Selection Algorithm.")
@@ -20,8 +21,10 @@ def main():
         bestSet = problemObj.greedy_backward_search()
         
     print("Using features ", bestSet)
-    dataset= Classifier(filename="./data/small-test-dataset.txt")
-    dataset.testTheData(dataset.test, bestSet)
+    validator = Validator("data/small-test-dataset.txt")
+    classifier = Classifier()
+    validator.k_fold(classifier, bestSet, k=5)
+
 
 if __name__ == '__main__':
     main()
