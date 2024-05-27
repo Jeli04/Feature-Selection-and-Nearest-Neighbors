@@ -32,15 +32,18 @@ class Validator:
 
         kfold_size = int(len(self.data) / k)
         k_folds = [self.data[j:j+kfold_size] for j in range(0, len(self.data), kfold_size)]
-        print(len(k_folds))
+        print(len(k_folds[0][0]))
+        """
+            CHANGING K BREAKS WHEN WE DO RESHAPE IN THE FORLOOP
+        """
         for i in range(k):
             output = []
             testing_set = k_folds[i]
             # print("Testing set ", testing_set)
             testing_labels = np.array(testing_set)[:, 0]
             training_set = k_folds[:i] + k_folds[i+1:]
-            training_set = np.array(training_set).reshape(-1, 10)
             print(training_set)
+            training_set = np.array(training_set).reshape(-1, 10)
             # print(training_set)
             for instance in testing_set:
                 output.append(classifier.nearestNeighbor(training_set, instance, feature_set))
@@ -92,4 +95,4 @@ bestSet = problemObj.greedy_backward_search()
 print("Using features ", bestSet)
 test = Validator("data/small-test-dataset.txt")
 test_classifier = Classifier("data/small-test-dataset.txt")
-test.k_fold(test_classifier, [2], 5)
+test.k_fold(test_classifier, [3,5,7], 5)
