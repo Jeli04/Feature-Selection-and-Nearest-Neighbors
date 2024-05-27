@@ -18,7 +18,7 @@ def main():
         bestSet = list(problemObj.greedy_forward_search())
     elif (algo == 2):
         bestSet = problemObj.greedy_backward_search()
-        
+
     print("Using features ", bestSet)
     dataset= Classifier(filename="./data/small-test-dataset.txt")
     dataset.testTheData(dataset.test, bestSet)

@@ -22,7 +22,7 @@ class Classifier:
         self.nearestNeighbor(self.train, test[i], featureSubset)
 
   def nearestNeighbor(self, data, testInstance, featureSubset):
-    minDistance = 1000
+    minDistance = float('inf')
     nearestRowIndex = 0 # row index = nearest neighbor
 
     testPoint = testInstance[featureSubset]

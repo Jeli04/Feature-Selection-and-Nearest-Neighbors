@@ -10,6 +10,16 @@ class Validator:
         self.test = self.data[int(len(self.data) * 0.8):]
 
     def k_fold(self, k):
+        k_fold_size = len(data)/k
+        k_folds = [data[j:j+k_fold_size] for j in range(0, len(data), k_fold_size)]
+        for i in range(k):
+            test = k_folds[i]
+            # train = every other k_fold
+
+            # run all the trains on knn
+
+            # perform validation on the test fold and output accuracies 
+                
         return 
 
     def eval(self):
