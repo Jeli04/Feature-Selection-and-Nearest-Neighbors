@@ -40,8 +40,6 @@ class Classifier:
 
 
         
-          
-
 
 # Using features (1,4,5)
 
