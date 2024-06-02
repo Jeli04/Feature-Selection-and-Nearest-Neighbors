@@ -10,12 +10,26 @@ class Validator:
         self.data = np.array([list(map(float, line.split())) for line in lines])
 
     def leave_one_out(self, classifier, feature_set):
+        #applying min-max normalization to every feature
+        for i in range(1, self.data.shape[1]):
+            col = self.data[:, i]
+        
+            # Calculate min and max
+            col_min = np.min(col)
+            col_max = np.max(col)
+        
+            # Apply min-max normalization
+            col_normalized = (col - col_min) / (col_max - col_min)
+        
+            # Replace the original column with the normalized column
+            self.data[:, i] = col_normalized
+
         accuracy = []
         for i in range(len(self.data)):
             validator = self.data[i] 
             output = classifier.nearestNeighbor(np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
             accuracy.append(int(output == validator[0]))
-        
+
         return np.mean(accuracy)
 
     def k_fold(self, classifier, feature_set, k):
