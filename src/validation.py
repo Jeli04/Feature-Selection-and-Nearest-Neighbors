@@ -2,7 +2,6 @@ import numpy as np
 from classifiers import Classifier
 import math
 
-
 class Validator:
     def __init__(self, filename) -> None:
         with open(filename, 'r') as file:
@@ -10,6 +9,14 @@ class Validator:
 
         self.data = np.array([list(map(float, line.split())) for line in lines])
 
+    def leave_one_out(self, classifier, feature_set):
+        accuracy = []
+        for i in range(len(self.data)):
+            validator = self.data[i] 
+            output = classifier.nearestNeighbor(np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
+            accuracy.append(int(output == validator[0]))
+        
+        return np.mean(accuracy)
 
     def k_fold(self, classifier, feature_set, k):
         #applying min-max normalization to every feature

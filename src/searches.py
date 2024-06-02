@@ -8,6 +8,9 @@ class Node:
         self.parent = parent
         self.currentFeatures = [] # forward + backward (Passed in features through main)
 
+    def __lt__(self, other):
+      return self.accuracy < other.accuracy
+
     def printInfo(self):
       print("Using feature(s) ", self.currentFeatures," accuracy is ", round(self.accuracy, 2))
 
@@ -20,13 +23,13 @@ class Problem:
       self.overallMaxAccuracy = 0
       self.bestNode = Node(self)
 
-    def eval(self):
-        return rand.uniform(0, 1) * 100
-    
-    def greedy_backward_search(self):
+    def eval(self, classifier, validator, feature_set):
+      return validator.leave_one_out(classifier, feature_set)
+
+    def greedy_backward_search(self, classifier, validator):
       #initialize node with all the features 
       root = Node(None) 
-      root.accuracy = self.eval()
+      root.accuracy = self.eval(classifier, validator, list(self.features))
       root.currentFeatures = self.features # all the features
 
       # add root to the queue (sort by max accuracy)
@@ -40,12 +43,10 @@ class Problem:
       else:
         ValueError("root is None!!")
 
-      
       parent = root
       currMaxAccuracy = 0.01
       bestFeatures = None
-      
-    
+          
       #while there are still features to be eliminated
       while parent.currentFeatures:
         pair = heapq.heappop(self.nodequeue) # pair is (-accuracy, node)
@@ -59,7 +60,7 @@ class Problem:
         
         for feature in parent.currentFeatures:
           newNode = Node(parent)
-          newNode.accuracy = self.eval()
+          newNode.accuracy = self.eval(classifier, validator, feature)
           childMax = max(childMax, newNode.accuracy)
           # give child node currentFeatures of its parent
           newNode.currentFeatures = list(newNode.parent.currentFeatures)
@@ -93,16 +94,20 @@ class Problem:
       
       return bestFeatures
   
-    def greedy_forward_search(self):
+    def greedy_forward_search(self, classifier, validator):
         result = [set()]
         best_score = 0.0 #current total evaluation for the subset
-        while len(self.features) > 0:
+
+        available_features = set(self.features)  # Use a set for available features
+
+        while available_features:
             curr_best_score = 0.0
             curr_best_feature = None
-            for feature in self.features:
+
+            for feature in available_features:
                 # eval feature with most recent subset
-                # curr_score = self.eval(result[-1] + feature)
-                curr_score = self.eval()
+                current_set = result[-1] | {feature}
+                curr_score = self.eval(classifier, validator, list(current_set))
                 print("Using feature(s) ", result[-1] | {feature}  ," accuracy is ", round(curr_score, 2))
                 if curr_score > curr_best_score:
                     curr_best_score = curr_score
@@ -110,10 +115,9 @@ class Problem:
 
             if best_score <= curr_best_score:
                 best_score = curr_best_score  # update the current best score
-                cpy = copy.deepcopy(result[-1]) # copy the current subset 
-                cpy.add(curr_best_feature)  
-                self.features.remove(curr_best_feature) # remove the best feature from the features 
-                result.append(cpy)  # add the new best subset
+                new_best_set = result[-1] | {curr_best_feature}
+                available_features.remove(curr_best_feature) # remove the best feature from the features 
+                result.append(new_best_set)  # add the new best subset
                 print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
 
             else:
