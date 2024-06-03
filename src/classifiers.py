@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import heapq
 
 class Classifier:
   def __init__(self) -> None:
@@ -39,20 +40,22 @@ class Classifier:
     return data[nearestRowIndex][0] # return the class label of the nearest neighbor
 
 
-        
+  def kNearestNeighbor(self, k, data, testInstance, featureSubset):
+    minheap = []
 
-# Using features (1,4,5)
+    testPoint = testInstance[featureSubset]
 
+    for i in range(len(data)):
+      newPoint = data[i][featureSubset]
 
-# Instance 1 is class 2
-# Its nearest neighbor is 5 which is in class 2
-# Instance 2 is class 1
-# Its nearest neighbor is 3 which is in class 1
-# Instance 3 is class 1
-# Its nearest neighbor is 4 which  1
-# Instance 4 is class 1
-# Its nearest neighbor is 3 which is in class 1
-# Instance 5 is class 2
-# Its nearest neighbor is 3 which is in class 1
+      distance = self.euclideanDistance([testPoint], [newPoint])
 
-# Accuracy  = 0.8
+      heapq.heappush(minheap, (distance, data[i][0]))
+
+    kNNList= []
+    for i in range(k):
+      #print(heapq.heappop(minheap))
+      #finds the k nearest elements popped from the heap
+      kNNList.append(heapq.heappop(minheap)[1])
+    majorityClass = max(set(kNNList), key = kNNList.count)
+    return majorityClass
