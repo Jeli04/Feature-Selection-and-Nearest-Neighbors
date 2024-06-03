@@ -36,7 +36,7 @@ def main():
     start_time_classification = time.time()
 
     # validator.k_fold(classifier, bestSet, k=5)
-    validator.leave_one_out(classifier, bestSet)    
+    validator.leave_one_out(classifier, bestSet, 1)    
 
     end_time_classification = time.time()
     elapsed_classification = end_time_classification - start_time_classification

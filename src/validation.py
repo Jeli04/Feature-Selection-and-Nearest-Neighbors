@@ -9,7 +9,7 @@ class Validator:
 
         self.data = np.array([list(map(float, line.split())) for line in lines])
 
-    def leave_one_out(self, classifier, feature_set):
+    def leave_one_out(self, classifier, feature_set, k):
         #applying min-max normalization to every feature
         for i in range(1, self.data.shape[1]):
             col = self.data[:, i]
@@ -27,7 +27,7 @@ class Validator:
         accuracy = []
         for i in range(len(self.data)):
             validator = self.data[i] 
-            output = classifier.kNearestNeighbor(5, np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
+            output = classifier.kNearestNeighbor(k, np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
             accuracy.append(int(output == validator[0]))
 
         return np.mean(accuracy)

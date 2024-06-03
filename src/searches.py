@@ -22,13 +22,13 @@ class Problem:
       self.overallMaxAccuracy = 0
       self.bestNode = Node(self)
 
-    def eval(self, classifier, validator, feature_set):
-      return validator.leave_one_out(classifier, feature_set)
+    def eval(self, classifier, validator, feature_set, k):
+      return validator.leave_one_out(classifier, feature_set, k)
 
-    def greedy_backward_search(self, classifier, validator):
+    def greedy_backward_search(self, classifier, validator, k=1):
       #initialize node with all the features 
       root = Node(None) 
-      root.accuracy = self.eval(classifier, validator, list(self.features))
+      root.accuracy = self.eval(classifier, validator, list(self.features), k)
       root.currentFeatures = self.features # all the features
 
       # add root to the queue (sort by max accuracy)
@@ -59,7 +59,7 @@ class Problem:
         
         for feature in parent.currentFeatures:
           newNode = Node(parent)
-          newNode.accuracy = self.eval(classifier, validator, feature)
+          newNode.accuracy = self.eval(classifier, validator, feature, k)
           childMax = max(childMax, newNode.accuracy)
           # give child node currentFeatures of its parent
           newNode.currentFeatures = list(newNode.parent.currentFeatures)
@@ -93,7 +93,7 @@ class Problem:
       
       return bestFeatures
   
-    def greedy_forward_search(self, classifier, validator):
+    def greedy_forward_search(self, classifier, validator, k=1):
         result = [set()]
         best_score = 0.0 #current total evaluation for the subset
 
@@ -106,7 +106,7 @@ class Problem:
             for feature in available_features:
                 # eval feature with most recent subset
                 current_set = result[-1] | {feature}
-                curr_score = self.eval(classifier, validator, list(current_set))
+                curr_score = self.eval(classifier, validator, list(current_set), k)
                 print("Using feature(s) ", result[-1] | {feature}  ," accuracy is ", round(curr_score, 2))
                 if curr_score > curr_best_score:
                     curr_best_score = curr_score
