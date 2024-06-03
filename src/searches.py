@@ -1,6 +1,5 @@
 import heapq
 import random as rand
-import copy
 
 class Node:
     def __init__(self, parent):

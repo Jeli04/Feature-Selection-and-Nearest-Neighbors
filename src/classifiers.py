@@ -23,10 +23,6 @@ class Classifier:
       # print("Data point", data[i])
       newPoint = data[i][featureSubset]
 
-      # convert each point to tuples to pass into euclideanDistance
-      # testPoint = tuple(testPoint)
-      # newPoint = tuple(newPoint)
-
       distance = self.euclideanDistance([testPoint], [newPoint])
 
       # update distance and nearest neighbor when new minimum is found
