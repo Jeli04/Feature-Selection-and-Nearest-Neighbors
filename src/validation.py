@@ -27,7 +27,7 @@ class Validator:
         accuracy = []
         for i in range(len(self.data)):
             validator = self.data[i] 
-            output = classifier.nearestNeighbor(np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
+            output = classifier.kNearestNeighbor(5, np.concatenate((self.data[:i], self.data[i+1:])), validator, feature_set)
             accuracy.append(int(output == validator[0]))
 
         return np.mean(accuracy)

@@ -5,6 +5,7 @@ from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
+#Converts data in small txt file to dataframe
 def create_df_small(file):
     file_path = file
     
@@ -33,6 +34,7 @@ def create_df_small(file):
 
     return df
 
+#Converts data in large txt file to dataframe
 def create_df_large(file):
     file_path = file
     
@@ -59,32 +61,23 @@ def create_df_large(file):
 
     return df
 
-
+#Create visuals for feature subsets that only have one feature
 def visualize_1d(df):
-    # Copy the DataFrame to avoid modifying the original
     df_to_norm = df.copy()
 
-    # Separate the class labels
+    #Separate the class labels
     classes = df_to_norm['Class Label']
     df_to_norm = df_to_norm.drop(columns=['Class Label'])
 
-    # Apply standard scaling
+    #Apply MinMax Scaling
     scale = MinMaxScaler().fit_transform(df_to_norm)
 
-    # Create a new DataFrame with the scaled features
     norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
 
-    # Insert the class labels back into the DataFrame
+    #Insert the class labels back into the DataFrame
     norm_df.insert(0, 'Class Label', classes)
     
     print(norm_df)
-    
-    #PLOT FOR BEST FEATURE SELECTION USING FORWARD SELECTION (SMALL DATASET)
-    # sns.scatterplot(data=norm_df,  x='Feature 9', y='Feature 9', hue='Class Label', palette='Set1')
-    # plt.title("Highest Yielding Feature Subset (Forward Selection)")
-    # plt.xlabel("Feature 3")
-    # plt.ylabel("Feature 3")
-    # plt.show()
     
     #PLOT FOR BEST FEATURE SELECTION USING BACKWARD SELECTION (SMALL DATASET)
     sns.scatterplot(data=norm_df,  x='Feature 9', y='Feature 9', hue='Class Label', palette='Set1')
@@ -93,80 +86,68 @@ def visualize_1d(df):
     plt.ylabel("Feature 3")
     plt.show()
 
+
+#Create visuals for feature subsets that only have two feature
 def visualize_2d(df):
 
-    # Copy the DataFrame to avoid modifying the original
     df_to_norm = df.copy()
 
-    # Separate the class labels
+    #Separate the class labels
     classes = df_to_norm['Class Label']
     df_to_norm = df_to_norm.drop(columns=['Class Label'])
 
-    # Apply standard scaling
     scale = MinMaxScaler().fit_transform(df_to_norm)
 
-    # Create a new DataFrame with the scaled features
     norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
 
-    # Insert the class labels back into the DataFrame
     norm_df.insert(0, 'Class Label', classes)
     
     print(norm_df)
 
-    sns.scatterplot(data=norm_df,  x='Feature 27', y='Feature 1', hue='Class Label', palette='Set1')
-    plt.title("Features with Best KNN Accuracy (Forward Selection)")
-    plt.xlabel("Feature 27")
-    plt.ylabel("Feature 1")
+    sns.scatterplot(data=norm_df,  x='Feature 2', y='Feature 13', hue='Class Label', palette='Set1')
+    plt.title("Feature 2 and Feature 13 Correlation Analysis")
+    plt.xlabel("Feature 2")
+    plt.ylabel("Feature 13")
     plt.show()
 
+#Create visuals for feature subsets that many features (used only for higher dimensional data)
 def high_dimensional(df):
     high_perf_df = df.copy()
-
-    high_perf_df = high_perf_df.drop(columns=['Feature 9'])
 
     scaled_data = MinMaxScaler().fit_transform(high_perf_df)
 
     reduced_df = PCA(n_components=2).fit_transform(scaled_data)
 
-    # Create the scatter plot
     sns.scatterplot(x=reduced_df[:, 0], y=reduced_df[:, 1], hue=high_perf_df['Class Label'], palette='Set1')
 
-    # Set the labels and title
     plt.xlabel('Principal Component 1')
     plt.ylabel('Principal Component 2')
     plt.title("PCA Graph of Best Feature(s) for Accuracy (Backward Elimination)")
 
-    # Show the plot
     plt.show()
 
 
-
-#df_small = create_df('data/CS170_Spring_2024_Small_data__16.txt')
+#creates dataframes for each of the datasets
 df_large = create_df_large('data/CS170_Spring_2024_Large_data__16.txt')
 df_small = create_df_small('data/CS170_Spring_2024_small_data__16.txt')
 df_large_custom = create_df_large('data/large-test-dataset.txt')
 df_small_custom = create_df_small('data/small-test-dataset.txt')
 
-#visualize_1d(df_small)
 
-#visualize_1d(df_small)
-#high_dimensional(df_small)
-# Copy the DataFrame to avoid modifying the original
-df_to_norm = df_small.copy()
 
-# Separate the class labels
-classes = df_to_norm['Class Label']
-df_to_norm = df_to_norm.drop(columns=['Class Label'])
+#######################################################Code Below is used simply for fast access to visuals#######################
 
-# Apply standard scaling
-scale = MinMaxScaler().fit_transform(df_to_norm)
 
-# Create a new DataFrame with the scaled features
-norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
+visualize_1d(df_small)
+visualize_2d(df_large)
+high_dimensional(df_large)
 
-# Insert the class labels back into the DataFrame
-norm_df.insert(0, 'Class Label', classes)
+K_vals = [2, 3, 4, 5]
+Accs = [.96, .95, .93, .91]
 
-sns.histplot(data=norm_df, x='Class Label', hue='Class Label', palette='Set1')
+sns.lineplot(x=K_vals, y=Accs)
+plt.xlabel("Values of K")
+plt.ylabel("Accuracy")
+plt.title("Values of K and Accuracy")
 plt.show()
 
