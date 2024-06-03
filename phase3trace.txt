@@ -368,7 +368,7 @@ Using features  [9]
 Classification Elapsed Time: 0.016247987747192383 seconds
 
 
----------------------------------------------------------RUNNING FORWARD SELECTION ON PERSONAL LARGE DATASET---------------------------------------------------
+---------------------------------------------------------RUNNING BACKWARD SELECTION ON PERSONAL LARGE DATASET---------------------------------------------------
 Welcome to the Feature Selection Algorithm.
 
 Please enter total number of features: 40
