@@ -127,42 +127,63 @@ class Problem:
         return result[-1] 
    
 
-    def bidirectional_feature_selection(self, classifier, validator, max_iter=100, k =1):
-      features = set([])  # initial features are empty
-      all_features = set(self.features)  # Use a set for available features
-      best_score = 0
+    def bidirectional_feature_selection(self, classifier, validator, k =1, threshold_in = 0.01, threshold_out=0.05):
+        features = set([])  # initial features are empty
+        all_features = set(self.features)  # Use a set for available features
+        best_score = 0
 
-      # Forward Selection
-      while True:
-        improved = False
-        for feature in all_features - features:
-            selected_features = list(features | {feature})
-            score = self.eval(classifier, validator, selected_features  , k)
-            if score > best_score:
-                best_score = score
-                best_features = selected_features
-                improved = True
-        if improved:
-            features = set(best_features)
-            print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 2), "%")
-        else:
-            break
+        # Forward Selection
+        while True:
+            improved = False
+            for feature in all_features - features:
+                selected_features = list(features | {feature})
+                score = self.eval(classifier, validator, selected_features, k)
+                if score > best_score + threshold_in:
+                    best_score = score
+                    best_features = selected_features
+                    improved = True
+            if improved:
+                features = set(best_features)
+                print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 4))
+            else:
+                break
 
-      # Backward Elimination
-      while len(features) > 1:
-        improved = False
-        for feature in features:
-            selected_features = list(features - {feature})
-            score = self.eval(classifier, validator, selected_features, k)
-            if score > best_score:
-                best_score = score
-                best_features = selected_features
-                improved = True
-        if improved:
-            features = set(best_features)
-            print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 2), "%")
-        else:
-            break
+        # Backward Elimination
+        while len(features) > 1:
+            improved = False
+            for feature in features:
+                selected_features = list(features - {feature})
+                score = self.eval(classifier, validator, selected_features, k)
+                if score > best_score + threshold_out:
+                    best_score = score
+                    best_features = selected_features
+                    improved = True
+            if improved:
+                features = set(best_features)
+                print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 4))
+            else:
+                break
 
+        return list(features)
+      
+    # def recursive_feature_elimination(self, classifier, validator, n_features_to_select=3, k=1):
+    #     features = list(self.features)
+    #     n_features = len(self.features)
+    #     feature_scores = {}
 
-      return selected_features
+    #     while len(features) > n_features_to_select:
+    #         # Score each feature set by removing one feature at a time
+    #         scores = {}
+    #         for feature in features:
+    #             temp_features = list(features)
+    #             temp_features.remove(feature)
+    #             scores[feature] = self.eval(classifier, validator, temp_features, k)
+
+    #         # Determine the feature with the least importance (lowest score)
+    #         worst_feature = min(scores, key=scores.get)
+    #         features.remove(worst_feature)
+    #         feature_scores[worst_feature] = n_features - len(features)
+
+    #     # Remaining features are selected
+    #     return features, [feature_scores.get(feature, 0) for feature in X.columns]
+

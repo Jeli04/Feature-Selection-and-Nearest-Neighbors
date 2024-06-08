@@ -31,7 +31,9 @@ def main():
         bestSet = problemObj.greedy_backward_search(classifier, validator)
     elif (algo == 3):
         bestSet = problemObj.bidirectional_feature_selection(classifier, validator)
-    
+    elif (algo == 4):
+        bestSet = problemObj.recursive_feature_elimination(classifier, validator)
+
     end_time_feature = time.time()
     elasped_feature = end_time_feature - start_time_feature
     print("\nFeature Selection Elapsed Time:", elasped_feature, "seconds")

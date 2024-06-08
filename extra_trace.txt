@@ -1,0 +1,81 @@
+---------------------------------------------------------RUNNING BIDIRECTIONAL SELECTION ON SMALL DATASET---------------------------------------------------
+Welcome to the Feature Selection Algorithm.
+
+Please enter total number of features: 10
+
+1 - Forward Selection
+2 - Backward Elimination
+3 - Bidirectional Selection
+Type the number of the algorithm you want to run: 3
+
+Beginning search.
+
+Feature set  [5]  was best, accuracy is  0.75
+Feature set  [3, 5]  was best, accuracy is  0.92
+
+Feature Selection Elapsed Time: 0.5748619842529297 seconds
+Using features  [3, 5]
+
+Classification Elapsed Time: 0.021197795867919922 seconds
+
+
+
+---------------------------------------------------------RUNNING BIDIRECTIONAL SELECTION ON LARGE DATASET---------------------------------------------------
+Welcome to the Feature Selection Algorithm.
+
+Please enter total number of features: 40
+
+1 - Forward Selection
+2 - Backward Elimination
+3 - Bidirectional Selection
+Type the number of the algorithm you want to run: 3
+
+Beginning search.
+
+Feature set  [27]  was best, accuracy is  0.85 %
+Feature set  [1, 27]  was best, accuracy is  0.96 %
+
+Feature Selection Elapsed Time: 211.85866594314575 seconds
+Using features  [1, 27]
+
+
+---------------------------------------------------------RUNNING BIDIRECTIONAL SELECTION ON PERSONAL SMALL DATASET---------------------------------------------------
+Welcome to the Feature Selection Algorithm.
+
+Please enter total number of features: 10
+
+1 - Forward Selection
+2 - Backward Elimination
+3 - Bidirectional Selection
+Type the number of the algorithm you want to run: 3
+
+Beginning search.
+
+Feature set  [9]  was best, accuracy is  0.86
+
+Feature Selection Elapsed Time: 0.37922810554504395 seconds
+Using features  [9]
+
+Classification Elapsed Time: 0.019098758697509766 seconds
+
+
+
+---------------------------------------------------------RUNNING BIDIRECTIONAL SELECTION ON PERSONAL LARGE DATASET---------------------------------------------------
+Welcome to the Feature Selection Algorithm.
+
+Please enter total number of features: 40
+
+1 - Forward Selection
+2 - Backward Elimination
+3 - Bidirectional Selection
+Type the number of the algorithm you want to run: 3
+
+Beginning search.
+
+Feature set  [33]  was best, accuracy is  0.862
+Feature set  [33, 13]  was best, accuracy is  0.982
+
+Feature Selection Elapsed Time: 211.20103101730347 seconds
+Using features  [33, 13]
+
+Classification Elapsed Time: 1.771913766860962 seconds
