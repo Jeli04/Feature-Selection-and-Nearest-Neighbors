@@ -11,12 +11,15 @@ def main():
     my_list = list(range(1, numFeatures+1))
     
     # initialize our objects
-    validator = Validator("data/CS170_Spring_2024_Small_data__16.txt")
+    # validator = Validator("data/CS170_Spring_2024_Small_data__16.txt")
+    validator = Validator("data/small-test-dataset.txt")
+
     problemObj = Problem(my_list)
     classifier = Classifier()
 
     print("\n1 - Forward Selection")
     print("2 - Backward Elimination")
+    print("3 - Bidirectional Selection")
     algo = int(input("Type the number of the algorithm you want to run: "))
     print("\nBeginning search.\n")
 
@@ -26,6 +29,8 @@ def main():
         bestSet = list(problemObj.greedy_forward_search(classifier, validator))
     elif (algo == 2):
         bestSet = problemObj.greedy_backward_search(classifier, validator)
+    elif (algo == 3):
+        bestSet = problemObj.bidirectional_feature_selection(classifier, validator)
     
     end_time_feature = time.time()
     elasped_feature = end_time_feature - start_time_feature
