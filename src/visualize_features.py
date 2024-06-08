@@ -66,24 +66,30 @@ def visualize_1d(df):
     df_to_norm = df.copy()
 
     #Separate the class labels
-    classes = df_to_norm['Class Label']
-    df_to_norm = df_to_norm.drop(columns=['Class Label'])
+    # classes = df_to_norm['Class Label']
+    # df_to_norm = df_to_norm.drop(columns=['Class Label'])
 
-    #Apply MinMax Scaling
-    scale = MinMaxScaler().fit_transform(df_to_norm)
+    # #Apply MinMax Scaling
+    # scale = MinMaxScaler().fit_transform(df_to_norm)
 
-    norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
+    # norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
 
-    #Insert the class labels back into the DataFrame
-    norm_df.insert(0, 'Class Label', classes)
+    # #Insert the class labels back into the DataFrame
+    # norm_df.insert(0, 'Class Label', classes)
     
-    print(norm_df)
+    # print(norm_df)
     
-    #PLOT FOR BEST FEATURE SELECTION USING BACKWARD SELECTION (SMALL DATASET)
-    sns.scatterplot(data=norm_df,  x='Feature 9', y='Feature 9', hue='Class Label', palette='Set1')
-    plt.title("Feature with Worst KNN Accuracy (Forward Selection)")
-    plt.xlabel("Feature 3")
-    plt.ylabel("Feature 3")
+    # #PLOT FOR BEST FEATURE SELECTION USING BACKWARD SELECTION (SMALL DATASET)
+    # sns.scatterplot(data=norm_df,  x='Feature 9', y='Feature 9', hue='Class Label', palette='Set1')
+    # plt.title("Feature with Worst KNN Accuracy (Forward Selection)")
+    # plt.xlabel("Feature 3")
+    # plt.ylabel("Feature 3")
+    # plt.show()
+
+    sns.countplot(data=df_to_norm, x='Class Label')
+    plt.title("Count of Data Objects Between Classes (Small Dataset)")
+    plt.xlabel("Labels")
+    plt.ylabel("Count")
     plt.show()
 
 
@@ -101,13 +107,11 @@ def visualize_2d(df):
     norm_df = pd.DataFrame(scale, columns=df_to_norm.columns)
 
     norm_df.insert(0, 'Class Label', classes)
-    
-    print(norm_df)
 
-    sns.scatterplot(data=norm_df,  x='Feature 2', y='Feature 13', hue='Class Label', palette='Set1')
-    plt.title("Feature 2 and Feature 13 Correlation Analysis")
-    plt.xlabel("Feature 2")
-    plt.ylabel("Feature 13")
+    sns.scatterplot(data=norm_df,  x='Feature 5', y='Feature 2', hue='Class Label', palette='Set1')
+    plt.title("Correlation Analysis of Feature 5 and 2 (Small Dataset)")
+    plt.xlabel("Feature 5")
+    plt.ylabel("Feature 2")
     plt.show()
 
 #Create visuals for feature subsets that many features (used only for higher dimensional data)
@@ -138,16 +142,16 @@ df_small_custom = create_df_small('data/small-test-dataset.txt')
 #######################################################Code Below is used simply for fast access to visuals#######################
 
 
-visualize_1d(df_small)
-visualize_2d(df_large)
-high_dimensional(df_large)
+# visualize_1d(df_small)
+visualize_2d(df_small_custom)
+# high_dimensional(df_large)
 
-K_vals = [2, 3, 4, 5]
-Accs = [.96, .95, .93, .91]
+# K_vals = [2, 3, 4, 5]
+# Accs = [.96, .95, .93, .91]
 
-sns.lineplot(x=K_vals, y=Accs)
-plt.xlabel("Values of K")
-plt.ylabel("Accuracy")
-plt.title("Values of K and Accuracy")
-plt.show()
+# sns.lineplot(x=K_vals, y=Accs)
+# plt.xlabel("Values of K")
+# plt.ylabel("Accuracy")
+# plt.title("Values of K and Accuracy")
+# plt.show()
 
