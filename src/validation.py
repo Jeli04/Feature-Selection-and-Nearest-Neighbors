@@ -1,6 +1,7 @@
 import numpy as np
 from classifiers import Classifier
 import math
+import statistics
 
 class Validator:
     def __init__(self, filename) -> None:
@@ -14,12 +15,11 @@ class Validator:
         for i in range(1, self.data.shape[1]):
             col = self.data[:, i]
         
-            # Calculate min and max
-            col_min = np.min(col)
-            col_max = np.max(col)
-        
+            #normalizes by z-score
+            means = statistics.mean(col)
+            std = statistics.stdev(col)
             # Apply min-max normalization
-            col_normalized = (col - col_min) / (col_max - col_min)
+            col_normalized = (col - means)/std
         
             # Replace the original column with the normalized column
             self.data[:, i] = col_normalized
