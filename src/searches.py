@@ -170,7 +170,7 @@ class Problem:
     #     features = list(self.features)
     #     n_features = len(self.features)
     #     feature_scores = {}
-
+    #     best_score = 0
     #     while len(features) > n_features_to_select:
     #         # Score each feature set by removing one feature at a time
     #         scores = {}
@@ -180,10 +180,10 @@ class Problem:
     #             scores[feature] = self.eval(classifier, validator, temp_features, k)
 
     #         # Determine the feature with the least importance (lowest score)
-    #         worst_feature = min(scores, key=scores.get)
+    #         worst_feature = min(scores, best_score)
     #         features.remove(worst_feature)
     #         feature_scores[worst_feature] = n_features - len(features)
 
     #     # Remaining features are selected
-    #     return features, [feature_scores.get(feature, 0) for feature in X.columns]
+    #     return features
 
