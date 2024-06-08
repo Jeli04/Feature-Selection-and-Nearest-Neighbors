@@ -128,51 +128,41 @@ class Problem:
    
 
     def bidirectional_feature_selection(self, classifier, validator, max_iter=100, k =1):
-      n_features = len(self.features)
-      selected_features = []
-      remaining_features = list(range(n_features))
-      best_score = float('-inf')
-      improved = True
-      iteration = 0
-      print(remaining_features)
-      while improved and iteration < max_iter:
-          improved = False
-          iteration += 1
+      features = set([])  # initial features are empty
+      all_features = set(self.features)  # Use a set for available features
+      best_score = 0
 
-          # Forward Step
-          forward_best_score = best_score
-          forward_best_feature = None
-          for feature in remaining_features:
-              temp_features = selected_features + [feature]
-              score = self.eval(classifier, validator, list(temp_features), k)
-              if score > forward_best_score:
-                  forward_best_score = score
-                  forward_best_feature = feature
+      # Forward Selection
+      while True:
+        improved = False
+        for feature in all_features - features:
+            selected_features = list(features | {feature})
+            score = self.eval(classifier, validator, selected_features  , k)
+            if score > best_score:
+                best_score = score
+                best_features = selected_features
+                improved = True
+        if improved:
+            features = set(best_features)
+            print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 2), "%")
+        else:
+            break
 
-          if forward_best_feature is not None:
-              selected_features.append(forward_best_feature)
-              remaining_features.remove(forward_best_feature)
-              best_score = forward_best_score
-              improved = True
-              print("Feature set ", selected_features[-1], " was best, accuracy is ", round(best_score, 2), "%")
+      # Backward Elimination
+      while len(features) > 1:
+        improved = False
+        for feature in features:
+            selected_features = list(features - {feature})
+            score = self.eval(classifier, validator, selected_features, k)
+            if score > best_score:
+                best_score = score
+                best_features = selected_features
+                improved = True
+        if improved:
+            features = set(best_features)
+            print("Feature set ", best_features, " was best, accuracy is ", round(best_score, 2), "%")
+        else:
+            break
 
-          # Backward Step
-          backward_best_score = best_score
-          backward_worst_feature = None
-          for feature in selected_features:
-              temp_features = list(selected_features)
-              temp_features.remove(feature)
-              if not temp_features:  # Skip if no features left after removal
-                  continue
-              score = self.eval(classifier, validator, list(temp_features), k)
-              if score > backward_best_score:
-                  backward_best_score = score
-                  backward_worst_feature = feature
-
-          if backward_worst_feature is not None:
-              selected_features.remove(backward_worst_feature)
-              remaining_features.append(backward_worst_feature)
-              best_score = backward_best_score
-              improved = True
 
       return selected_features
