@@ -11,7 +11,7 @@ def main():
     my_list = list(range(1, numFeatures+1))
     
     # initialize our objects
-    validator = Validator("data/large-test-dataset.txt")
+    validator = Validator("data/small-test-dataset.txt")
     problemObj = Problem(my_list)
     classifier = Classifier()
 

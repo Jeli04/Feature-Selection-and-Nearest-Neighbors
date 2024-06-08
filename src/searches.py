@@ -86,10 +86,10 @@ class Problem:
 
         if childMax<parent.accuracy:
           print("Warning! accuracy has decreased!So we stop searching..")
-          print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
+          print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2))
           break
         #compare accuracies of current subset and output best accuracy
-        print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2), "%")
+        print("Feature set ", bestFeatures, " was best, accuracy is ", round(self.overallMaxAccuracy, 2))
       
       return bestFeatures
   
@@ -117,11 +117,11 @@ class Problem:
                 new_best_set = result[-1] | {curr_best_feature}
                 available_features.remove(curr_best_feature) # remove the best feature from the features 
                 result.append(new_best_set)  # add the new best subset
-                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
+                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2))
 
             else:
                 print("Warning! accuracy has decreased! So we stop searching..")
-                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2), "%")
+                print("Feature set ", result[-1], " was best, accuracy is ", round(best_score, 2))
                 return result[-1]
         
         return result[-1] 
