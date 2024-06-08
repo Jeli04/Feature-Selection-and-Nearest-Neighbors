@@ -134,8 +134,8 @@ def high_dimensional(df):
 #creates dataframes for each of the datasets
 df_large = create_df_large('data/CS170_Spring_2024_Large_data__16.txt')
 df_small = create_df_small('data/CS170_Spring_2024_small_data__16.txt')
-df_large_custom = create_df_large('data/large-test-dataset.txt')
-df_small_custom = create_df_small('data/small-test-dataset.txt')
+df_large_noncustom = create_df_large('data/large-test-dataset.txt')
+df_small_noncustom = create_df_small('data/small-test-dataset.txt')
 
 
 
@@ -143,7 +143,7 @@ df_small_custom = create_df_small('data/small-test-dataset.txt')
 
 
 # visualize_1d(df_small)
-visualize_2d(df_small_custom)
+visualize_2d(df_small_noncustom)
 # high_dimensional(df_large)
 
 # K_vals = [2, 3, 4, 5]
