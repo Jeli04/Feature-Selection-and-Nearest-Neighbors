@@ -12,7 +12,7 @@ def main():
     
     # initialize our objects
     # validator = Validator("data/CS170_Spring_2024_Small_data__16.txt")
-    validator = Validator("data/large-test-dataset.txt")
+    validator = Validator("data/CS170_Spring_2024_Small_data__31.txt")
 
     problemObj = Problem(my_list)
     classifier = Classifier()
